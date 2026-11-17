@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <title>윤재하</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7d8592"/>
+      <stop offset="0.35" stop-color="#b9c0ca"/>
+      <stop offset="0.5" stop-color="#cfd5dd"/>
+      <stop offset="0.65" stop-color="#b3bac5"/>
+      <stop offset="1" stop-color="#737b88"/>
+    </linearGradient>
+    <pattern id="brush" width="6" height="1000" patternUnits="userSpaceOnUse">
+      <rect width="6" height="1000" fill="none"/>
+      <rect x="0" width="1" height="1000" fill="#ffffff" opacity="0.10"/>
+      <rect x="3" width="1" height="1000" fill="#000000" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="light" cx="0.5" cy="0.05" r="0.8">
+      <stop offset="0" stop-color="#fff6e4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff6e4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0.6" stop-color="#1b2230" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1b2230" stop-opacity="0.45"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9b8a6"/>
+      <stop offset="0.12" stop-color="#f0d6c7"/>
+      <stop offset="1" stop-color="#ebcdbd"/>
+    </linearGradient>
+    <linearGradient id="neck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8968a"/>
+      <stop offset="0.45" stop-color="#e3c3b2"/>
+      <stop offset="1" stop-color="#d9b6a4"/>
+    </linearGradient>
+    <linearGradient id="hood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa0a9"/>
+      <stop offset="1" stop-color="#6f757f"/>
+    </linearGradient>
+    <linearGradient id="hoodShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity="0.28"/>
+      <stop offset="0.3" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.7" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.32"/>
+    </linearGradient>
+    <linearGradient id="beanie" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#121317"/>
+      <stop offset="0.45" stop-color="#2a2b31"/>
+      <stop offset="1" stop-color="#0e0f12"/>
+    </linearGradient>
+    <linearGradient id="mask" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d0e11"/>
+      <stop offset="0.45" stop-color="#26272d"/>
+      <stop offset="1" stop-color="#0b0c0f"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16161b"/>
+      <stop offset="1" stop-color="#0c0c10"/>
+    </linearGradient>
+    <clipPath id="eyeL"><path d="M328 452 Q350 433 380 445 Q358 461 328 452 Z"/></clipPath>
+    <clipPath id="eyeR"><path d="M420 445 Q450 433 472 452 Q442 461 420 445 Z"/></clipPath>
+    <clipPath id="cuffClip"><path d="M276 360 Q400 344 524 360 L526 414 Q400 400 274 414 Z"/></clipPath>
+  </defs>
+
+  <!-- 배경: 엘리베이터 안 -->
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#brush)"/>
+  <rect x="398" y="0" width="4" height="1000" fill="#5f6672" opacity="0.5"/>
+  <rect x="128" y="0" width="2" height="1000" fill="#5f6672" opacity="0.35"/>
+  <rect x="670" y="0" width="2" height="1000" fill="#5f6672" opacity="0.35"/>
+  <!-- 층수 표시등 -->
+  <g transform="translate(600 92)">
+    <rect width="132" height="64" rx="8" fill="#15181e"/>
+    <rect x="3" y="3" width="126" height="58" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
+    <text x="34" y="44" font-family="ui-monospace, monospace" font-size="22" fill="#e9a646" opacity="0.5">▼</text>
+    <text x="72" y="49" font-family="ui-monospace, monospace" font-size="40" font-weight="700" fill="#f0ad4e">8</text>
+  </g>
+  <rect width="800" height="1000" fill="url(#light)"/>
+
+  <!-- 후드 몸판 -->
+  <path d="M70 1000 C82 862 140 762 262 716 C302 700 338 690 360 682 L440 682 C462 690 498 700 538 716 C660 762 718 862 730 1000 Z" fill="url(#hood)"/>
+  <path d="M70 1000 C82 862 140 762 262 716 C302 700 338 690 360 682 L440 682 C462 690 498 700 538 716 C660 762 718 862 730 1000 Z" fill="url(#hoodShade)"/>
+  <!-- 후드 주름 -->
+  <g fill="none" stroke="#5c626c" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M190 800 C220 840 236 900 232 1000"/>
+    <path d="M612 800 C584 846 570 910 574 1000"/>
+    <path d="M300 760 C290 800 300 840 286 880"/>
+    <path d="M510 764 C520 806 508 846 522 890"/>
+  </g>
+
+  <!-- 모자(후드) 뭉친 부분: 목 뒤 -->
+  <path d="M286 712 C296 652 346 626 400 628 C454 626 504 652 514 712 C482 698 446 690 400 690 C354 690 318 698 286 712 Z" fill="#7d838c"/>
+  <path d="M300 700 C320 664 356 648 400 648 C444 648 480 664 500 700" fill="none" stroke="#666c75" stroke-width="3"/>
+
+  <!-- 뒷머리 -->
+  <path d="M302 372 C266 436 256 520 262 598 C266 646 248 688 258 724 C286 740 318 712 334 690 L466 690 C482 712 514 740 542 724 C552 688 534 646 538 598 C544 520 534 436 498 372 Z" fill="url(#hair)"/>
+
+  <!-- 목 -->
+  <path d="M366 576 L362 694 C380 712 420 712 438 694 L434 576 Z" fill="url(#neck)"/>
+
+  <!-- 넥라인 시보리 -->
+  <path d="M346 676 C366 712 434 712 454 676 L466 694 C438 732 362 732 334 694 Z" fill="#717780"/>
+  <g stroke="#626872" stroke-width="2" opacity="0.8">
+    <path d="M352 690 L344 702"/><path d="M366 698 L360 712"/><path d="M382 703 L379 718"/>
+    <path d="M400 705 L400 720"/><path d="M418 703 L421 718"/><path d="M434 698 L440 712"/><path d="M448 690 L456 702"/>
+  </g>
+
+  <!-- 출입증 끈(데뷔조 색) + 카드 -->
+  <path d="M372 712 C376 780 388 850 396 900" fill="none" stroke="#c7832a" stroke-width="9" stroke-linecap="round"/>
+  <path d="M428 712 C424 780 412 850 404 900" fill="none" stroke="#b07222" stroke-width="9" stroke-linecap="round"/>
+  <rect x="384" y="892" width="32" height="14" rx="3" fill="#b9bcc2"/>
+  <g transform="rotate(-4 400 960)">
+    <rect x="358" y="904" width="86" height="112" rx="6" fill="#f3f4f6"/>
+    <rect x="370" y="922" width="34" height="40" rx="3" fill="#c9ced6"/>
+    <rect x="370" y="972" width="60" height="6" rx="3" fill="#2e3f6e"/>
+    <rect x="370" y="984" width="40" height="5" rx="2.5" fill="#9aa3b4"/>
+  </g>
+
+  <!-- 후드 끈 -->
+  <g stroke="#e9eaed" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M356 716 C352 760 350 800 346 836"/>
+    <path d="M444 716 C450 762 452 804 458 846"/>
+  </g>
+  <rect x="340" y="832" width="11" height="20" rx="4" fill="#cfd2d8"/>
+  <rect x="453" y="842" width="11" height="20" rx="4" fill="#cfd2d8"/>
+
+  <!-- 얼굴 -->
+  <path d="M310 396 C306 470 318 540 360 590 C375 607 390 615 400 615 C410 615 425 607 440 590 C482 540 494 470 490 396 Z" fill="url(#skin)"/>
+  <!-- 비니 아래 그림자 -->
+  <path d="M310 404 Q400 392 490 404 L490 428 Q400 418 310 428 Z" fill="#a9877a" opacity="0.35"/>
+
+  <!-- 눈썹 -->
+  <path d="M332 424 Q354 413 384 420" fill="none" stroke="#1a1416" stroke-width="7" stroke-linecap="round"/>
+  <path d="M416 420 Q446 413 468 424" fill="none" stroke="#1a1416" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- 눈: 시선은 옆으로 비껴 있다 -->
+  <path d="M328 452 Q350 433 380 445 Q358 461 328 452 Z" fill="#f6f1ee"/>
+  <g clip-path="url(#eyeL)">
+    <circle cx="345" cy="448" r="10" fill="#2b201d"/>
+    <circle cx="345" cy="448" r="4.5" fill="#0d0a0a"/>
+    <circle cx="341" cy="444" r="2.4" fill="#ffffff"/>
+    <path d="M320 430 L390 430 L390 444 Q356 440 320 450 Z" fill="#c7a596" opacity="0.35"/>
+  </g>
+  <path d="M326 453 Q350 431 382 444" fill="none" stroke="#151012" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M332 441 Q352 428 378 436" fill="none" stroke="#9c7b6f" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+  <path d="M336 456 Q356 460 376 448" fill="none" stroke="#a88779" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <path d="M420 445 Q450 433 472 452 Q442 461 420 445 Z" fill="#f6f1ee"/>
+  <g clip-path="url(#eyeR)">
+    <circle cx="433" cy="448" r="10" fill="#2b201d"/>
+    <circle cx="433" cy="448" r="4.5" fill="#0d0a0a"/>
+    <circle cx="429" cy="444" r="2.4" fill="#ffffff"/>
+    <path d="M410 430 L480 430 L480 450 Q444 440 410 444 Z" fill="#c7a596" opacity="0.35"/>
+  </g>
+  <path d="M418 444 Q450 431 474 453" fill="none" stroke="#151012" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M422 436 Q448 428 468 441" fill="none" stroke="#9c7b6f" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+  <path d="M424 448 Q444 460 464 456" fill="none" stroke="#a88779" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- 마스크 -->
+  <path d="M312 472 C340 462 376 456 400 452 C424 456 460 462 488 472 C489 522 472 570 440 596 C425 608 410 614 400 614 C390 614 375 608 360 596 C328 570 311 522 312 472 Z" fill="url(#mask)"/>
+  <path d="M312 472 C340 462 376 456 400 452 C424 456 460 462 488 472" fill="none" stroke="#3a3b42" stroke-width="2.5"/>
+  <g fill="none" stroke="#3b3c44" stroke-width="2" opacity="0.7" stroke-linecap="round">
+    <path d="M326 520 C360 512 440 512 474 520"/>
+    <path d="M338 560 C370 554 430 554 462 560"/>
+  </g>
+  <path d="M400 454 L400 610" stroke="#000" stroke-width="2" opacity="0.35"/>
+  <!-- 마스크 끈 -->
+  <path d="M313 478 C300 474 294 486 300 498" fill="none" stroke="#1d1e22" stroke-width="4"/>
+  <path d="M487 478 C500 474 506 486 500 498" fill="none" stroke="#1d1e22" stroke-width="4"/>
+
+  <!-- 이어폰: 오른쪽 귀 -->
+  <path d="M500 486 C516 540 520 600 508 652 C498 700 484 760 470 830" fill="none" stroke="#f2f2f4" stroke-width="3.5" stroke-linecap="round"/>
+  <ellipse cx="499" cy="480" rx="9" ry="11" fill="#f7f7f9"/>
+  <ellipse cx="497" cy="478" rx="3.5" ry="4" fill="#d9dbe0"/>
+
+  <!-- 옆머리: 비니 밑으로 삐져나와 어깨까지 -->
+  <path d="M302 400 C290 446 296 486 288 528 C280 572 298 604 288 644 C282 672 292 700 280 726 C306 712 320 684 320 650 C320 616 312 588 318 552 C324 512 316 470 326 410 Z" fill="url(#hair)"/>
+  <path d="M498 400 C510 446 504 486 512 528 C520 572 502 604 512 644 C518 672 508 700 520 726 C494 712 480 684 480 650 C480 616 488 588 482 552 C476 512 484 470 474 410 Z" fill="url(#hair)"/>
+  <!-- 머리 결 하이라이트 -->
+  <g fill="none" stroke="#3a3a45" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+    <path d="M304 430 C298 480 304 520 296 560 C290 600 302 630 294 668"/>
+    <path d="M496 430 C502 480 496 520 504 560 C510 600 498 630 506 668"/>
+    <path d="M272 520 C268 580 276 640 266 700"/>
+    <path d="M528 520 C532 580 524 640 534 700"/>
+  </g>
+  <!-- 마스크 위로 흘러내린 잔머리 -->
+  <g fill="none" stroke="#141418" stroke-linecap="round">
+    <path d="M326 408 C334 444 344 476 336 512 C330 540 338 560 334 580" stroke-width="5"/>
+    <path d="M318 412 C322 452 330 484 324 520" stroke-width="3.5"/>
+    <path d="M476 408 C468 446 462 474 470 506 C476 530 468 552 472 568" stroke-width="4.5"/>
+  </g>
+
+  <!-- 비니 -->
+  <path d="M278 408 C272 300 326 228 400 224 C474 228 528 300 522 408 Z" fill="url(#beanie)"/>
+  <path d="M318 300 C340 262 372 246 410 244" fill="none" stroke="#3b3c44" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M276 360 Q400 344 524 360 L526 414 Q400 400 274 414 Z" fill="#1e1f24"/>
+  <g clip-path="url(#cuffClip)" stroke="#33343b" stroke-width="3">
+    <path d="M286 340 V420"/><path d="M298 340 V420"/><path d="M310 340 V420"/><path d="M322 340 V420"/>
+    <path d="M334 340 V420"/><path d="M346 340 V420"/><path d="M358 340 V420"/><path d="M370 340 V420"/>
+    <path d="M382 340 V420"/><path d="M394 340 V420"/><path d="M406 340 V420"/><path d="M418 340 V420"/>
+    <path d="M430 340 V420"/><path d="M442 340 V420"/><path d="M454 340 V420"/><path d="M466 340 V420"/>
+    <path d="M478 340 V420"/><path d="M490 340 V420"/><path d="M502 340 V420"/><path d="M514 340 V420"/>
+  </g>
+  <path d="M276 360 Q400 344 524 360" fill="none" stroke="#0c0d10" stroke-width="3"/>
+
+  <rect width="800" height="1000" fill="url(#vig)"/>
+</svg>
