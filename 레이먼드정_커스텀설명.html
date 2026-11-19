@@ -1,108 +1,149 @@
 <title>레이먼드 정 캐릭터 카드</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Noto+Serif+KR:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Nanum+Pen+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500&family=Nanum+Pen+Script&display=swap">
 <style>
-:root{--ry:url("https://raw.githubusercontent.com/akari383/-/a91aadb1ce422918040bef37942483964fbcbaa1/images/raymond.jpg");--bg:#0b0b0d;--s1:#141417;--s2:#1d1d22;--ln:#ffffff14;--tx:#ece8e1;--mu:#a39e95;--dm:#6f6a63;--pa:#e9e0cc;--pa2:#d8ccb1;--ink:#2a241c;--rd:#c0392b;--ne:#ff5a5a;--am:#f0b44c;--gr:#7fbf8a;--se:"Noto Serif KR",serif;--mo:"IBM Plex Mono",monospace;color-scheme:dark}
+:root{--ry:url("https://raw.githubusercontent.com/akari383/-/a91aadb1ce422918040bef37942483964fbcbaa1/images/raymond.jpg");--bg:#08080a;--s1:#121215;--s2:#1b1b20;--s3:#26262d;--ln:#ffffff12;--tx:#efeae2;--mu:#a59f96;--dm:#6c675f;--pa:#ebe2ce;--pa2:#d9cdb2;--ink:#29231b;--rd:#c0392b;--ne:#ff4d4d;--am:#f0b44c;--se:"Noto Serif KR",serif;--mo:"IBM Plex Mono",monospace;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;color:var(--tx);font-family:Pretendard,"Noto Sans KR",sans-serif;font-size:14.5px;line-height:1.65;letter-spacing:-.01em;word-break:keep-all;padding:16px max(16px,env(safe-area-inset-left,0)) 48px;background:radial-gradient(80% 32% at 50% 0,#4a1414 0,#0b0b0d00 70%),var(--bg)}
-.w{max-width:480px;margin:0 auto;display:grid;gap:16px}
-.sg{position:relative;text-align:center;padding:20px 12px 16px;border:1.5px solid #ff5a5a40;border-radius:18px;background:#120c0d;box-shadow:inset 0 0 30px #ff5a5a14,0 0 40px #ff5a5a14}
-.ne{font-family:var(--se);font-weight:700;font-size:25px;letter-spacing:.02em;color:#ffd9d9;text-shadow:0 0 6px #ff5a5a,0 0 16px #ff5a5a,0 0 32px #ff3b3b99}
-.ne span{color:#3c2224;text-shadow:none;animation:fl 5s infinite}
-@keyframes fl{0%,88%,92%,100%{color:#3c2224;text-shadow:none}90%{color:#ffd9d9;text-shadow:0 0 6px #ff5a5a,0 0 16px #ff5a5a}}
-.sg small{display:block;margin-top:6px;font-family:var(--mo);font-size:11px;color:var(--dm);letter-spacing:.06em}
+body{margin:0;color:var(--tx);font-family:Pretendard,"Noto Sans KR",sans-serif;font-size:14.5px;line-height:1.65;letter-spacing:-.01em;word-break:keep-all;padding:14px max(16px,env(safe-area-inset-left,0)) 48px;background:radial-gradient(90% 30% at 50% 0,#3a0f10 0,#08080a00 70%),var(--bg)}
+a{color:inherit;text-decoration:none}
+.w{max-width:480px;margin:0 auto;display:grid;gap:14px}
+.hr{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;background:var(--ry) 50% 34%/cover;box-shadow:0 30px 60px -24px #ff4d4d55,0 0 0 1px var(--ln)}
+.hr::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#08080aa6 0,#0000 20%,#0000 46%,#08080ad9 78%,#08080a),radial-gradient(70% 50% at 0 0,#ff4d4d2e,#0000 70%)}
+.hr::after{content:"";position:absolute;inset:0;opacity:.13;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.ht{position:absolute;z-index:1;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.nn{font:700 13.5px var(--se);color:#ffd9d9;padding:5px 12px;border-radius:10px;border:1px solid #ff4d4d66;background:#14080999;text-shadow:0 0 6px #ff4d4d,0 0 14px #ff4d4d;box-shadow:0 0 18px #ff4d4d33,inset 0 0 12px #ff4d4d22;backdrop-filter:blur(6px)}
+.nn i{font-style:normal;color:#4a2628;text-shadow:none;animation:fl 5s infinite}
+@keyframes fl{0%,88%,92%,100%{color:#4a2628;text-shadow:none}90%{color:#ffd9d9;text-shadow:0 0 6px #ff4d4d,0 0 14px #ff4d4d}}
+.pl{font-size:11px;font-weight:700;padding:5px 11px;border-radius:99px;background:#0000004d;border:1px solid #ffffff26;backdrop-filter:blur(10px)}
+.pl b{color:var(--am)}
+.hb{position:absolute;z-index:1;left:20px;right:20px;bottom:20px}
+.kk{font:500 10.5px var(--mo);letter-spacing:.22em;color:var(--ne)}
+.hb h1{margin:4px 0 0;font:900 36px/1.05 var(--se);letter-spacing:-.02em}
+.sb{margin-top:6px;font-size:12.5px;color:#d7d1c7}
+.qt{margin:12px 0 0;font:700 15px/1.5 var(--se);font-style:italic;color:#fff;padding-left:12px;border-left:2px solid var(--ne)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:12px 4px;text-align:center}
+.st div+div{border-left:1px solid var(--ln)}
+.st b{display:block;font:800 16px Pretendard,"Noto Sans KR",sans-serif}
+.st span{font-size:10.5px;color:var(--mu)}
+.st .r{color:var(--ne)}
+.ct{display:grid;grid-template-columns:1fr 52px;gap:8px}
+.go{height:52px;border-radius:16px;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;background:linear-gradient(135deg,#ff5a4d,#c0392b 60%,#7a1d1d);box-shadow:0 12px 26px -10px #ff4d4dcc,inset 0 1px 0 #ffffff33}
+.um{height:52px;border-radius:16px;display:grid;place-items:center;font-size:20px;background:var(--s2);border:1px solid var(--ln)}
+.tb{display:flex;gap:4px;padding:4px;background:var(--s1);border:1px solid var(--ln);border-radius:14px;font-size:13px;text-align:center}
+.tb a{flex:1;padding:7px 0;border-radius:10px;color:var(--mu)}
+.tb a:first-child{background:var(--s3);color:var(--tx);font-weight:700}
 .fd{position:relative;padding-top:22px}
-.tb{position:absolute;top:0;left:18px;padding:4px 14px 10px;border-radius:10px 10px 0 0;background:var(--pa2);color:var(--ink);font:500 11px var(--mo);letter-spacing:.12em}
-.pp{position:relative;background:var(--pa);color:var(--ink);border-radius:4px 14px 14px 14px;padding:18px;box-shadow:0 20px 40px #0009;background-image:radial-gradient(120% 80% at 100% 0,#00000014,#0000 60%)}
-.ph{position:relative;aspect-ratio:5/4;margin:8px 4px 34px;background:var(--ry) 50% 30%/cover;border:7px solid #fff;border-bottom-width:30px;box-shadow:0 12px 24px #0007;transform:rotate(-1.4deg)}
-.ph::before{content:"";position:absolute;left:26px;top:-16px;width:14px;height:42px;border:2.5px solid #9aa0a8;border-radius:9px;transform:rotate(8deg)}
-.ph b{position:absolute;left:0;right:0;bottom:-28px;text-align:center;font-family:"Nanum Pen Script",cursive;font-weight:400;font-size:18px;color:#4a4a4a}
-.nm h1{margin:0;font-family:var(--se);font-size:28px;line-height:1.15}
-.nm p{margin:3px 0 0;font-size:12.5px;color:#5c5446}
-.rd{background:var(--ink);color:var(--ink);border-radius:2px;padding:0 2px}
+.ft1{position:absolute;top:0;left:18px;padding:4px 14px 10px;border-radius:10px 10px 0 0;background:var(--pa2);color:var(--ink);font:500 11px var(--mo);letter-spacing:.12em}
+.pp{position:relative;background:var(--pa);color:var(--ink);border-radius:4px 16px 16px 16px;padding:18px;box-shadow:0 22px 40px #000a;background-image:radial-gradient(120% 80% at 100% 0,#00000016,#0000 60%),radial-gradient(80% 60% at 0 100%,#7a5a2a14,#0000 70%)}
+.tp{display:flex;gap:14px;align-items:center}
+.ph{position:relative;flex:none;width:84px;height:104px;background:var(--ry) 50% 26%/170% auto;border:4px solid #fff;border-bottom-width:14px;box-shadow:0 6px 12px #0005;transform:rotate(-3deg)}
+.ph::before{content:"";position:absolute;left:12px;top:-13px;width:11px;height:32px;border:2px solid #9aa0a8;border-radius:8px;transform:rotate(8deg)}
+.nm h2{margin:0;font:900 25px/1.15 var(--se)}
+.nm p{margin:3px 0 0;font-size:12px;color:#5c5446}
+.rd{background:var(--ink);color:var(--ink);border-radius:2px;padding:0 3px}
+.sp{position:absolute;right:16px;top:16px;padding:3px 10px;border:2.5px solid var(--rd);border-radius:6px;color:var(--rd);font:800 14px "Noto Sans KR",sans-serif;letter-spacing:.2em;transform:rotate(9deg);opacity:.85}
+.fp{position:absolute;right:20px;bottom:18px;width:46px;height:56px;border-radius:50% 50% 46% 46%;opacity:.16;background:repeating-radial-gradient(ellipse at 50% 60%,#29231b 0 1.2px,#0000 1.2px 3.6px);transform:rotate(-12deg)}
 .dl{margin:14px 0 0;font-size:13px}
-.dl div{display:grid;grid-template-columns:70px 1fr;gap:8px;padding:6px 0;border-top:1px dashed #2a241c40}
+.dl div{display:grid;grid-template-columns:70px 1fr;gap:8px;padding:6px 0;border-top:1px dashed #29231b40}
 .dl dt{font:500 11px var(--mo);color:#7a705e;padding-top:2px}
-.dl dd{margin:0;font-weight:500}
-.st{position:absolute;z-index:2;right:14px;top:14px;padding:3px 10px;border:2.5px solid var(--rd);border-radius:6px;color:var(--rd);font:800 14px "Noto Sans KR",sans-serif;letter-spacing:.2em;transform:rotate(9deg);opacity:.85}
-.cd{background:var(--s1);border:1px solid var(--ln);border-radius:20px;padding:18px}
-.lb{display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:700;margin-bottom:12px}
-.lb span{font:400 11px var(--mo);color:var(--dm)}
-.cs{display:grid;gap:8px}
-.cs div{display:grid;grid-template-columns:58px 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:var(--pa);color:var(--ink);transform:rotate(-.4deg)}
-.cs div:nth-child(even){transform:rotate(.5deg)}
-.cs em{font:500 11.5px var(--mo);font-style:normal;color:#7a705e}
-.cs b{font-size:13.5px}
-.cs small{display:block;font-size:11px;font-weight:400;color:#6b6252}
-.cs i{font:500 10.5px var(--mo);font-style:normal;padding:2px 8px;border-radius:4px;color:#fff;white-space:nowrap}
-.r{background:var(--rd)}.g{background:#4f8a5b}.a{background:#b7832a}.k{background:var(--ink)}
-.lg{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;font-size:11.5px;color:var(--mu)}
+.dl dd{margin:0;font-weight:600}
+.cd{background:var(--s1);border:1px solid var(--ln);border-radius:22px;padding:18px}
+.lb{display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:800;margin-bottom:12px}
+.lb span{font:400 10.5px var(--mo);color:var(--dm);letter-spacing:.04em}
+.bd{position:relative;height:330px;border-radius:14px;overflow:hidden;background:linear-gradient(to bottom right,#0000 calc(50% - 1px),#c0392bcc 50%,#0000 calc(50% + 1px)),linear-gradient(to top right,#0000 calc(50% - 1px),#c0392bcc 50%,#0000 calc(50% + 1px)),radial-gradient(circle at 20% 30%,#ffffff08 0 1px,#0000 2px) 0 0/9px 9px,#2a221b}
+.bd>div{position:absolute;width:46%;padding:10px 11px;background:var(--pa);color:var(--ink);box-shadow:0 8px 14px #0008}
+.bd>div::before{content:"";position:absolute;left:50%;top:-5px;width:11px;height:11px;margin-left:-5px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff8a80,#c0392b 60%);box-shadow:0 2px 3px #0008}
+.c1{left:3%;top:5%;transform:rotate(-3deg)}.c2{right:3%;top:7%;transform:rotate(2.5deg)}.c3{left:4%;bottom:6%;transform:rotate(2deg)}.c4{right:3%;bottom:5%;transform:rotate(-2.5deg)}
+.bd em{display:block;font:500 10.5px var(--mo);font-style:normal;color:#7a705e}
+.bd b{display:block;font-size:13.5px;line-height:1.35;margin:2px 0}
+.bd small{display:block;font-size:10.5px;color:#6b6252;line-height:1.4}
+.bd i{display:inline-block;margin-top:5px;font:500 10px var(--mo);font-style:normal;padding:1px 7px;border-radius:4px;color:#fff}
+.k1{background:var(--rd)}.k2{background:#4f8a5b}.k3{background:#b7832a}.k4{background:var(--ink)}
+.bx{position:absolute;left:50%;top:50%;width:66px;height:66px;margin:-33px 0 0 -33px;border-radius:50%;display:grid;place-content:center;text-align:center;background:#141012;border:2px solid var(--ne);box-shadow:0 0 18px #ff4d4d55;font:800 20px var(--se);color:var(--ne);line-height:1}
+.bx small{display:block;font:500 8.5px var(--mo);color:var(--mu);margin-top:3px}
+.lg{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;font-size:11px;color:var(--mu)}
 .lg span{padding:3px 9px;border-radius:7px;background:var(--s2)}
-.ch{display:grid;gap:9px;padding:14px 12px;border-radius:16px;background:#0e0e10;border:1px solid var(--ln)}
-.me{justify-self:end;max-width:78%;padding:9px 13px;border-radius:16px 16px 4px 16px;background:#3a3a42;font-size:13.5px}
-.mo{font-family:var(--se);font-style:italic;font-size:13.5px;color:#d6cfc3;padding:2px 4px;border-left:2px solid var(--ne);padding-left:10px;line-height:1.6}
-.ac{font-size:12.5px;color:var(--mu);padding:0 4px}
-.sa{justify-self:start;max-width:84%;padding:9px 13px;border-radius:16px 16px 16px 4px;background:var(--pa);color:var(--ink);font-weight:600;font-size:13.5px}
-.fl{justify-self:start;font:500 11px var(--mo);color:var(--am);padding:2px 9px;border:1px solid #f0b44c55;border-radius:5px;background:#f0b44c12}
-.ep{display:grid;gap:8px}
-.ep div{position:relative;padding:11px 14px 11px 64px;border-radius:12px;background:var(--s2)}
-.ep em{position:absolute;left:14px;top:12px;font:500 11px var(--mo);font-style:normal;color:var(--dm)}
-.ep b{display:block;font-size:14px}
-.ep span{font-size:12.5px;color:var(--mu)}
-.ep i{position:absolute;right:12px;top:11px;font-style:normal;font-size:11px;color:var(--dm)}
-.ep .on{background:#2a1416;box-shadow:inset 0 0 0 1.5px #ff5a5a88}
-.ep .on em,.ep .on i{color:var(--ne)}
-.ep div:not(.on) b,.ep div:not(.on) span{opacity:.6}
+.ch{display:grid;gap:10px;padding:14px 12px;border-radius:16px;background:#0c0c0e;border:1px solid var(--ln)}
+.me{justify-self:end;max-width:76%;padding:9px 13px;border-radius:16px 16px 4px 16px;background:#3a3a43;font-size:13.5px}
+.mo{font:500 13.5px/1.65 var(--se);font-style:italic;color:#d9d2c6;text-align:center;padding:4px 10px}
+.mo::before,.mo::after{content:"—";color:var(--ne);margin:0 6px;font-style:normal}
+.ac{font-size:12px;color:var(--mu);text-align:center}
+.ry{display:flex;align-items:flex-end;gap:8px;max-width:88%}
+.av{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ry) 50% 30%/230% auto;box-shadow:0 0 0 1.5px #ff4d4d88}
+.sa{padding:9px 13px;border-radius:16px 16px 16px 4px;background:var(--pa);color:var(--ink);font-weight:700;font-size:13.5px}
+.fl{justify-self:center;font:500 10.5px var(--mo);color:var(--am);padding:3px 10px;border:1px solid #f0b44c55;border-radius:6px;background:#f0b44c12}
 .mm{border-radius:6px;padding:10px 14px 12px;color:#2c2618;background:repeating-linear-gradient(#f3ecda 0 27px,#d9cdb0 27px 28px);font-family:"Nanum Pen Script",cursive;font-size:20px;line-height:28px;transform:rotate(-.7deg);box-shadow:0 10px 20px #0008}
 .mm .t{font:500 11px var(--mo);line-height:28px;color:#857a60}
 .mm p{margin:0}
 .mm .x{color:var(--rd)}
+.ep{display:grid;gap:0}
+.ep div{position:relative;padding:0 0 16px 46px}
+.ep div:last-child{padding-bottom:0}
+.ep div::before{content:"";position:absolute;left:15px;top:30px;bottom:0;width:2px;background:repeating-linear-gradient(#ffffff22 0 4px,#0000 4px 8px)}
+.ep div:last-child::before{display:none}
+.ep em{position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font:500 10px var(--mo);font-style:normal;color:var(--dm);border:1.5px solid #ffffff26;background:var(--s2)}
+.ep b{display:block;font-size:14px;padding-top:4px}
+.ep span{font-size:12.5px;color:var(--mu)}
+.ep i{position:absolute;right:0;top:5px;font-style:normal;font-size:11px;color:var(--dm)}
+.ep .on em{color:#fff;border-color:var(--ne);background:#3a1214;box-shadow:0 0 12px #ff4d4d66}
+.ep .on i{color:var(--ne);font-weight:700}
+.ep div:not(.on) b,.ep div:not(.on) span{opacity:.55}
 .pe{display:grid;gap:8px}
-.pe>div{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:center;padding:11px 12px;border-radius:14px;background:var(--s2)}
-.pe i{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-style:normal;font-size:19px;background:#2a2a31}
+.pe>div{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;padding:11px 12px;border-radius:16px;background:var(--s2)}
+.pe i{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-style:normal;font-size:20px;background:var(--s3)}
 .pe b{display:block;font-size:13.5px}
-.pe b small{font-weight:400;color:var(--mu);margin-left:5px;font-size:11.5px}
+.pe b small{font-weight:400;color:var(--mu);margin-left:5px;font-size:11px}
 .pe span{font-size:12.5px;color:var(--mu);line-height:1.5}
 .cp{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
 .cp span{font-size:13px;padding:8px 13px;border-radius:12px;background:var(--s2);border:1px solid var(--ln)}
-.cp span::before{content:"📁 ";font-size:11px}
+.cp span::before{content:"✦ ";color:var(--ne)}
 .mu{color:var(--mu);font-size:12.5px;margin:0}
-.ft{text-align:center;font-size:11.5px;color:var(--dm);line-height:1.8}
-.ft b{color:var(--mu);font-weight:600}
+.fo{text-align:center;font-size:11px;color:var(--dm);line-height:1.8}
+.fo b{color:var(--mu);font-weight:600}
 </style>
 <div class="w">
-<div class="sg"><div class="ne">레이먼<span>드</span> 정 탐정 사무소</div><small>삼거리 상가 2층 · 1층 통닭집 옆 계단으로</small></div>
 
-<div class="fd"><div class="tb">CASE FILE · 탐정 신상</div>
-<div class="pp"><div class="st">기밀</div>
-<div class="ph"><b>증명사진 · 비 오는 날 찍음</b></div>
-<div class="nm"><h1>레이먼드 정</h1><p>본명 <span class="rd">정만식</span> (묻지 마시오) · 34세 · 남 · 183cm</p></div>
+<div class="hr">
+<div class="ht"><span class="nn">레이먼<i>드</i> 정 탐정 사무소</span><span class="pl">📁 <b>#1119</b> 접수 중</span></div>
+<div class="hb"><div class="kk">PRIVATE DETECTIVE</div><h1>레이먼드 정</h1>
+<div class="sb">사립탐정 · 34세 · 183cm · 삼거리 상가 2층</div>
+<p class="qt">"살인 사건은 없소. 사라진 푸딩이라면 맡겠소."</p></div>
+</div>
+
+<div class="st"><div><b>214</b><span>해결 사건</span></div><div><b class="r">0</b><span>강력 사건</span></div><div><b>🍞 2</b><span>수임료</span></div><div><b>100%</b><span>하드보일드</span></div></div>
+<div class="ct"><div class="go">📁 사건 의뢰하기</div><div class="um">☂️</div></div>
+<div class="tb"><a href="#a">신상</a><a href="#b">수사 보드</a><a href="#c">대화</a><a href="#d">에피소드</a></div>
+
+<div class="fd" id="a"><div class="ft1">CASE FILE · 탐정 신상</div>
+<div class="pp"><div class="sp">기밀</div><div class="fp"></div>
+<div class="tp"><div class="ph"></div><div class="nm"><h2>레이먼드 정</h2><p>본명 <span class="rd">정만식</span> (묻지 마시오)</p><p>34세 · 남 · 183cm</p></div></div>
 <dl class="dl">
 <div><dt>직업</dt><dd>사립탐정 (민간 탐정 자격)</dd></div>
 <div><dt>사무소</dt><dd>삼거리 상가 2층 · 숙식도 여기서</dd></div>
-<div><dt>해결 사건</dt><dd>214건 · 강력 사건 0건</dd></div>
 <div><dt>수임료</dt><dd>붕어빵 2개부터 · 밀크커피 가능</dd></div>
 <div><dt>특이사항</dt><dd>금연 3년 차 · 박하사탕 상시 휴대</dd></div>
+<div><dt>약점</dt><dd>본명으로 불리면 하드보일드가 무너짐</dd></div>
 </dl></div></div>
 
-<div class="cd"><div class="lb">진행 중인 사건<span>SOLVED 214 / 강력 0</span></div>
-<div class="cs">
-<div><em>#1118</em><b>사라진 우산<small>편의점 우산꽂이 · 용의자 X</small></b><i class="r">미해결</i></div>
-<div><em>#1102</em><b>실종된 푸딩<small>범인: 의뢰인 본인 (잠결)</small></b><i class="g">해결</i></div>
-<div><em>#1027</em><b>읽씹의 그림자<small>단톡방 숫자 1의 행방</small></b><i class="a">추적 중</i></div>
-<div><em>#0000</em><b><span class="rd">심박수 이상 원인</span><small>담당: 레이먼드 정</small></b><i class="k">기밀</i></div>
+<div class="cd" id="b"><div class="lb">수사 보드<span>SOLVED 214 · 강력 0</span></div>
+<div class="bd">
+<div class="c1"><em>#1118</em><b>사라진 우산</b><small>편의점 우산꽂이 · 비 오는 날만</small><i class="k1">미해결</i></div>
+<div class="c2"><em>#1102</em><b>실종된 푸딩</b><small>범인: 의뢰인 본인 (잠결)</small><i class="k2">해결</i></div>
+<div class="c3"><em>#1027</em><b>읽씹의 그림자</b><small>단톡방 숫자 1의 행방</small><i class="k3">추적 중</i></div>
+<div class="c4"><em>#0000</em><b><span class="rd">심박수 이상</span></b><small>담당: 레이먼드 정</small><i class="k4">기밀</i></div>
+<span class="bx">X?<small>우산 도둑</small></span>
 </div></div>
 
-<div class="cd"><div class="lb">대화 미리보기<span>21:40 · 비 그침</span></div>
-<div class="lg"><span><i>*별표*</i> 탐정 독백</span><span>"하오체" 대사</span><span>📁 사건 파일</span></div>
+<div class="cd" id="c"><div class="lb">대화 미리보기<span>21:40 · 비 그침</span></div>
+<div class="lg"><span>— 독백 — 탐정의 속마음</span><span>"하오체" 대사</span><span>📁 사건 파일</span></div>
 <div class="ch">
 <div class="me">냉장고에 둔 푸딩이 없어졌어요</div>
 <div class="mo">푸딩. 작고, 달고, 무방비한 것. 이 도시에서는 늘 그런 것부터 사라진다.</div>
 <div class="fl">📁 사건 파일 #1119 '실종된 푸딩'</div>
-<div class="sa">"질문 세 개 하겠소. 하나, 그 집에 사는 인간은 몇이오."</div>
+<div class="ry"><div class="av"></div><div class="sa">"질문 세 개 하겠소. 하나, 그 집에 사는 인간은 몇이오."</div></div>
 <div class="me">…만식 씨?</div>
 <div class="ac">레이먼드는 굴리던 박하사탕을 그대로 삼켰다.</div>
-<div class="sa">"아, 그, 그거 어디서… 크흠. 질문은 내가 하오."</div>
+<div class="ry"><div class="av"></div><div class="sa">"아, 그, 그거 어디서… 크흠. 질문은 내가 하오."</div></div>
 </div></div>
 
 <div class="cd"><div class="lb">탐정 수첩<span>코트 안주머니</span></div>
@@ -112,7 +153,7 @@ body{margin:0;color:var(--tx);font-family:Pretendard,"Noto Sans KR",sans-serif;f
 <p>…붕어빵 무슨 맛 좋아하는지 물어볼 것</p>
 <p class="x">※ 사건과 무관한 메모 금지</p></div></div>
 
-<div class="cd"><div class="lb">에피소드<span>1 / 5 진행 중</span></div>
+<div class="cd" id="d"><div class="lb">에피소드<span>1 / 5 진행 중</span></div>
 <div class="ep">
 <div class="on"><em>EP.1</em><b>첫 의뢰</b><span>비 그친 밤, 반쯤 꺼진 간판 아래로 의뢰인이 올라온다.</span><i>진행 중</i></div>
 <div><em>EP.2</em><b>단골 의뢰인</b><span>"이번 수임료는… 다음 주에도 오는 것으로 하겠소."</span><i>🔒</i></div>
@@ -132,5 +173,5 @@ body{margin:0;color:var(--tx);font-family:Pretendard,"Noto Sans KR",sans-serif;f
 <div class="cp"><span>푸딩이 사라졌어요</span><span>단톡방 읽씹 미스터리</span><span>양말 한 짝 실종 사건</span><span>수임료는 붕어빵으로</span><span>…만식 씨?</span></div>
 <p class="mu">살인 사건은 없소. 하지만 당신이 잃어버린 작은 것이라면, 이 탐정은 목숨을 건다.</p></div>
 
-<div class="ft"><b>유저 성별 자유 · NL / BL</b><br>레이먼드 정 탐정 사무소와 등장인물은 모두 가상의 설정입니다.</div>
+<div class="fo"><b>유저 성별 자유 · NL / BL</b><br>레이먼드 정 탐정 사무소와 등장인물은 모두 가상의 설정입니다.</div>
 </div>
