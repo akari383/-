@@ -1,56 +1,50 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Mono:wght@400;500&family=Nanum+Pen+Script&display=swap">
 <style>
-.go{--tx:#1c2230;--mu:#687084;--dm:#9aa1b1;--ln:#e5e7ec;--bl:#2f6bff;--bl2:#eaf0ff;--gh:#bfe6ff;--mo:"IBM Plex Mono",ui-monospace,monospace;max-width:440px;margin:8px auto;background:#f2f3f6;color:var(--tx);border:1px solid var(--ln);border-radius:22px;overflow:hidden;font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:1.6;letter-spacing:-.01em;word-break:keep-all}
-.go *{box-sizing:border-box}
-.go-bar{display:flex;align-items:center;gap:8px;padding:12px 14px;background:#fff;border-bottom:1px solid var(--ln)}
-.go-lo{width:24px;height:24px;border-radius:8px;background:var(--bl);color:#fff;display:grid;place-items:center;font-size:12px}
-.go-bar b{font-size:13px}
-.go-bar span{margin-left:auto;font-size:11px;font-weight:700;color:#18a058;background:#e7f7ee;padding:3px 9px;border-radius:99px}
-.go-pic{position:relative;height:150px;overflow:hidden;background:linear-gradient(180deg,#3b3a78 0,#8a64a8 45%,#f39c7c 80%,#ffd19c 100%)}
-.go-pic>*,.go-hs>*,.go-wi>*{position:absolute}
-.go-gd{left:-5%;right:-5%;bottom:0;height:22%;background:#2c2541;border-radius:50% 50% 0 0/40% 40% 0 0}
-.go-hs{left:36%;width:34%;bottom:16%;height:58%;background:repeating-linear-gradient(0deg,#9a3e2b 0 7px,#7d3020 7px 8px);box-shadow:inset -10px 0 0 #00000026}
-.go-hs::before{content:"";position:absolute;left:-3%;right:-3%;top:-7%;height:7%;background:#5a2318}
-.go-wi{width:24%;height:22%;border:2px solid #e9dcc8;background:#ffd98a;box-shadow:0 0 12px #ffd98a99}
-.go-w1{left:12%;top:14%}.go-w2{right:12%;top:14%;background:#33406e;box-shadow:none}.go-w3{left:12%;top:56%}
-.go-dr{right:14%;bottom:0;width:20%;height:36%;background:#4a2a1e;border:2px solid #e9dcc8;border-bottom:0}
-.go-gs{left:28%;bottom:0;width:44%;height:84%;opacity:.75}
-.go-gs::before{content:"";position:absolute;left:28%;top:0;width:44%;height:44%;border-radius:50%;background:var(--gh)}
-.go-gs::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:48%;border-radius:40% 40% 0 0;background:var(--gh)}
-.go-tr{left:12%;bottom:16%;width:18%;height:50%}
-.go-tr::before{content:"";position:absolute;left:44%;bottom:0;width:10%;height:45%;background:#3b2a24}
-.go-tr::after{content:"";position:absolute;left:0;top:0;width:100%;height:66%;border-radius:50%;background:radial-gradient(circle at 30% 40%,#ff9a3c 0 5%,#0000 6%),radial-gradient(circle at 65% 32%,#ff9a3c 0 5%,#0000 6%),radial-gradient(circle at 52% 66%,#ff9a3c 0 5%,#0000 6%),#2f4a3a}
-.go-tt{left:14px;bottom:10px;color:#fff;font-size:11px;font-weight:700;text-shadow:0 1px 4px #0008}
-.go-tt b{display:block;font-size:17px}
-.go-bd{display:grid;gap:9px;padding:14px}
-.go-na{font-size:12.5px;color:var(--mu)}
-.go-sy{display:flex;align-items:flex-end;gap:8px;max-width:92%}
-.go-av{position:relative;flex:none;width:30px;height:30px;border-radius:50%;overflow:hidden;background:linear-gradient(#e3f3ff,#bfdcf3);border:1.5px dashed #9cc7ea;opacity:.8}
-.go-av::before{content:"";position:absolute;left:10px;top:4px;width:10px;height:12px;border-radius:50%;background:#8a6a52}
-.go-av::after{content:"";position:absolute;left:4px;top:17px;width:22px;height:16px;border-radius:11px 11px 0 0;background:#5b7fb0}
-.go-sy p{margin:0;padding:9px 13px;border-radius:16px 16px 16px 4px;background:#fff;border:1px solid var(--ln);font-size:13.5px}
-.go-fx{justify-self:center;font-size:11.5px;color:#7a5b00;background:#fff3cf;border:1px solid #ffe08a;border-radius:99px;padding:3px 11px;text-align:center}
-.go-ch{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 12px}
-.go-ch div{padding:10px;border-radius:12px;background:#fff;border:1px solid var(--ln);text-align:center;font-size:13px;font-weight:700;color:var(--bl)}
-.go-st{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px 14px;border-top:1px solid var(--ln);background:#fff}
-.go-st span{font:500 10.5px var(--mo);color:var(--mu);padding:3px 9px;border-radius:99px;background:#f2f3f6}
+.dm{--tx:#f3eefb;--mu:#ada3c2;--dm:#756b8c;--pk:#ff6fb5;--vi:#a46bff;--mo:"IBM Plex Mono",ui-monospace,monospace;max-width:440px;margin:8px auto;color:var(--tx);border:1px solid #ffffff1f;border-radius:22px;overflow:hidden;font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:1.65;letter-spacing:-.01em;word-break:keep-all;background:radial-gradient(90% 40% at 50% 0,#3a1f5e,#0c081600 70%),#0c0816}
+.dm *{box-sizing:border-box}
+.dm-hd{position:relative;height:150px;overflow:hidden;background:radial-gradient(1px 1px at 14% 22%,#fff 50%,#0000),radial-gradient(1.5px 1.5px at 70% 18%,#fff 50%,#0000),radial-gradient(1px 1px at 40% 12%,#fffb 50%,#0000),linear-gradient(180deg,#1a0f33,#3b1f5e 60%,#6a2d6e)}
+.dm-mn{position:absolute;right:28px;top:22px;width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#fff6e0,#ffe2b0 55%,#f3c58a);box-shadow:0 0 30px 8px #ffd9a033}
+.dm-pt{position:absolute;left:0;right:0;bottom:0;height:46px;background:linear-gradient(90deg,#ff6fb522,#a46bff22);border-top:1px solid #ffffff1a}
+.dm-pt i{position:absolute;bottom:10px;width:7px;height:9px;border-radius:50% 50% 50% 0;background:#ff6fb5aa;transform:rotate(-45deg)}
+.dm-tt{position:absolute;left:16px;top:16px}
+.dm-ep{font:500 10.5px var(--mo);letter-spacing:.18em;color:#d7b8ff}
+.dm-ti{margin-top:2px;font:900 21px/1.25 "Noto Serif KR",serif}
+.dm-st{font-size:12px;color:#d9cfee}
+.dm-al{margin:12px 14px 0;padding:8px 12px;border-radius:12px;background:#a46bff1f;border:1px solid #a46bff55;font:500 11px var(--mo);color:#e6d4ff}
+.dm-bd{display:grid;gap:9px;padding:12px 14px}
+.dm-na{font-size:12.5px;color:var(--mu)}
+.dm-sa{display:flex;align-items:flex-end;gap:8px;max-width:92%}
+.dm-av{flex:none;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#0b0614 33%,#0000 34%),linear-gradient(#3b2560,#1c1030);box-shadow:0 0 0 1.5px #a46bff99}
+.dm-sa p{margin:0;padding:9px 13px;border-radius:16px 16px 16px 4px;background:#2c2145;font-size:13.5px}
+.dm-cl{justify-self:center;font-size:11.5px;color:#ffd0e6;background:#ff6fb51a;border:1px dashed #ff6fb566;border-radius:8px;padding:4px 11px;text-align:center}
+.dm-ct{margin:4px 14px 14px;border-radius:16px;padding:14px;background:linear-gradient(#f7f1ff,#ece2fb);color:#2a1d40;box-shadow:0 14px 28px #0009}
+.dm-ct h4{margin:0 0 6px;text-align:center;font:900 15px "Noto Serif KR",serif;letter-spacing:.06em}
+.dm-ct p{display:flex;gap:8px;margin:0;padding:6px 0;border-top:1px dashed #2a1d4033;font-size:12.5px}
+.dm-ct p i{flex:none;width:15px;height:15px;margin-top:2px;border-radius:4px;border:1.5px solid #6b4fa0}
+.dm-sg{display:flex;justify-content:space-between;align-items:flex-end;margin-top:8px;font-size:11px;color:#6b5a85}
+.dm-sg b{font:400 22px "Nanum Pen Script",cursive;color:#3a2a58;display:inline-block;transform:rotate(-3deg)}
+.dm-bt{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.dm-bt div{padding:9px;border-radius:12px;text-align:center;font-weight:800;font-size:13.5px}
+.dm-bt .y{background:#6b4fa0;color:#fff}.dm-bt .n{background:#fff;border:1px solid #2a1d4026;color:#6b4fa0}
+.dm-fs{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 14px}
+.dm-fs span{font:500 10.5px var(--mo);color:var(--mu);padding:3px 9px;border-radius:99px;background:#ffffff0d;border:1px solid #ffffff14}
 </style>
-<div class="go">
-<div class="go-bar"><div class="go-lo">⌂</div><b>방방곡곡 · 매물 #1988</b><span>✓ 방문 예약 확정</span></div>
-<div class="go-pic"><div class="go-gd"></div><div class="go-tr"></div>
-<div class="go-hs"><div class="go-wi go-w1"><div class="go-gs"></div></div><div class="go-wi go-w2"></div><div class="go-wi go-w3"></div><div class="go-dr"></div></div>
-<div class="go-tt">EP.1 · 집 구경<b>토요일 오후 5시, 언덕 끝 벽돌집</b></div></div>
-<div class="go-bd">
-<div class="go-na">마당에는 감나무 한 그루. 녹슨 우편함에는 오래된 글씨로 '백' 한 글자만 남아 있었다. 초인종이 울리기도 전에 대문이 먼저 열렸다.</div>
-<div class="go-sy"><div class="go-av"></div><p>"아, 오셨어요? 매물 보고 연락 주신 분 맞죠? 들어오세요, 들어오세요. 신발은 편하게 벗으시고요."</p></div>
-<div class="go-na">청재킷을 입은 남자가 환하게 웃고 있었다. 목에는 요즘은 보기 힘든 워크맨이 걸려 있었다.</div>
-<div class="go-fx">( 현관 센서등이 혼자 켜졌다 꺼졌다 한다 )</div>
-<div class="go-sy"><div class="go-av"></div><p>"아, 저거요? 센서가 좀 예민해요. 사람 오면 엄청 반가워해요. 저처럼. …아니, 센서가요."</p></div>
-<div class="go-sy"><div class="go-av"></div><p>"여기 남향이라 해가 진짜 잘 들어요. 1988년부터 쭉 그랬어요. 그걸 제가 어떻게 아냐면… 토박이라서요. 하하."</p></div>
-<div class="go-fx">( 부엌 찬장이 스르륵 열렸다가 조용히 닫힌다 )</div>
-<div class="go-na">남자는 못 본 척 웃으며 발끝을 바닥에 꾹 눌렀다. 아주 잠깐, 그 발이 바닥에서 떠 있었던 것 같았다.</div>
-<div class="go-sy"><div class="go-av"></div><p>"자, 2층부터 보실래요, 옥상부터 보실래요?"</p></div>
+<div class="dm">
+<div class="dm-hd"><div class="dm-mn"></div><div class="dm-pt"><i style="left:12%"></i><i style="left:24%"></i><i style="left:38%;bottom:16px"></i><i style="left:55%"></i><i style="left:70%;bottom:14px"></i><i style="left:84%"></i></div>
+<div class="dm-tt"><div class="dm-ep">EP.1 · 첫 접속</div><div class="dm-ti">새벽 1시 30분, 꿈의 시작</div><div class="dm-st">호텔 스위트룸 · 장미 꽃잎 · 비 오는 창가</div></div></div>
+<div class="dm-al">『 몽마 관리공단: 배정 꿈 접속 완료 · 담당 M-0717 백정훈 』</div>
+<div class="dm-bd">
+<div class="dm-na">창가에 검은 실크 셔츠를 입은 남자가 서 있었다. 단추가 세 개쯤 풀려 있었는데, 남자는 자꾸 그 깃을 여몄다. 보랏빛 눈, 작은 검은 뿔. 그리고 손에 든 큐카드.</div>
+<div class="dm-sa"><div class="dm-av"></div><p>"오, 오늘 밤… 당신의 꿈은 내 거예요."</p></div>
+<div class="dm-cl">( 꼬리 끝이 바닥을 탁, 탁 친다 )</div>
+<div class="dm-na">카드를 넘기는 사이 스위트룸이 스르륵 흐려지며, 어딘가 익숙한 장소로 바뀌기 시작했다.</div>
+<div class="dm-sa"><div class="dm-av"></div><p>"아, 아니. 죄송합니다. 순서가 틀렸어요. 계약서부터 해야 하는데."</p></div>
 </div>
-<div class="go-ch"><div>🪜 2층부터</div><div>🌇 옥상부터</div></div>
-<div class="go-st"><span>👻 선명도 12%</span><span>🏠 미계약 · 집 구경 중</span><span>💡 센서등 켜짐 · 반가움</span></div>
+<div class="dm-ct"><h4>꿈 계약서</h4>
+<p><i></i>제1조. 본 몽마는 꿈 주인의 동의 없이 유혹하지 않습니다.</p>
+<p><i></i>제3조. 본 꿈에서는 설렘이 발생할 수 있습니다.</p>
+<p><i></i>제7조. 꿈 주인은 언제든 "그만"이라고 말할 수 있습니다.</p>
+<div class="dm-sg"><span>"그… 동의하시겠어요?"</span><b>백정훈 (떨림)</b></div>
+<div class="dm-bt"><div class="y">동의하기</div><div class="n">그만</div></div></div>
+<div class="dm-fs"><span>✨ 설렘 에너지 0/1000</span><span>📉 등급 F</span><span>⏳ 퇴출 D-10</span><span>💜 꼬리 탁탁</span></div>
 </div>

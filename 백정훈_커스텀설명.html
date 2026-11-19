@@ -1,171 +1,199 @@
 <title>백정훈 캐릭터 카드</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&family=Nanum+Pen+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Mono:wght@400;500&family=Nanum+Pen+Script&display=swap">
 <style>
-:root{--bg:#f2f3f6;--cd:#fff;--ln:#e5e7ec;--tx:#1c2230;--mu:#687084;--dm:#9aa1b1;--bl:#2f6bff;--bl2:#eaf0ff;--rd:#ff4d5e;--gh:#bfe6ff;--ye:#ffb020;--mo:"IBM Plex Mono",monospace;color-scheme:light}
+:root{--bg:#0c0816;--s1:#161026;--s2:#201733;--s3:#2c2145;--ln:#ffffff14;--tx:#f3eefb;--mu:#ada3c2;--dm:#756b8c;--pk:#ff6fb5;--vi:#a46bff;--gd:linear-gradient(135deg,#ff6fb5,#a46bff 55%,#5b6bff);--mo:"IBM Plex Mono",monospace;--se:"Noto Serif KR",serif;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:Pretendard,"Noto Sans KR",sans-serif;font-size:14.5px;line-height:1.6;letter-spacing:-.01em;word-break:keep-all;padding:14px max(16px,env(safe-area-inset-left,0)) 48px}
-.w{max-width:480px;margin:0 auto;display:grid;gap:12px}
-.ab{display:flex;align-items:center;gap:8px}
-.lo{width:28px;height:28px;border-radius:9px;background:var(--bl);display:grid;place-items:center;color:#fff;font-size:14px}
-.ab b{font-size:17px;font-weight:800;letter-spacing:-.03em;color:var(--bl)}
-.ab span{margin-left:auto;font-size:12px;color:var(--mu);padding:5px 11px;border-radius:99px;background:var(--cd);border:1px solid var(--ln)}
-.pic{position:relative;height:0;padding-top:76%;border-radius:20px;overflow:hidden;background:linear-gradient(180deg,#2b2f63 0,#6c5aa8 42%,#f19a7c 76%,#ffd19c 100%)}
-.pic>*,.hs>*,.wi>*{position:absolute}
-.sun{left:-10%;bottom:6%;width:60%;height:50%;background:radial-gradient(closest-side,#ffe7b8,#ffe7b800)}
-.gd{left:-5%;right:-5%;bottom:0;height:20%;background:#2c2541;border-radius:50% 50% 0 0/40% 40% 0 0}
-.hs{left:33%;width:44%;bottom:14%;height:50%;background:repeating-linear-gradient(0deg,#9a3e2b 0 9px,#7d3020 9px 10px);box-shadow:inset -14px 0 0 #00000026}
-.hs::before{content:"";position:absolute;left:-3%;right:-3%;top:-7%;height:7%;background:#5a2318}
-.hs::after{content:"";position:absolute;left:0;right:0;top:-17%;height:10%;border:2px solid #3a1a14;border-bottom:0;background:repeating-linear-gradient(90deg,#0000 0 8px,#3a1a14 8px 10px)}
-.wi{width:24%;height:22%;border:3px solid #e9dcc8;background:#ffd98a;box-shadow:0 0 16px #ffd98a99}
-.w1{left:12%;top:14%}.w2{right:12%;top:14%;background:#33406e;box-shadow:none}.w3{left:12%;top:56%}
-.dr{right:14%;bottom:0;width:20%;height:36%;background:#4a2a1e;border:3px solid #e9dcc8;border-bottom:0}
-.dr::after{content:"";position:absolute;right:4px;top:46%;width:4px;height:4px;border-radius:50%;background:#ffd98a}
-.gst{left:28%;bottom:0;width:44%;height:84%;opacity:.75;filter:drop-shadow(0 0 5px var(--gh))}
-.gst::before{content:"";position:absolute;left:28%;top:0;width:44%;height:44%;border-radius:50%;background:var(--gh)}
-.gst::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:48%;border-radius:40% 40% 0 0;background:var(--gh)}
-.tr{left:6%;bottom:14%;width:24%;height:42%}
-.tr::before{content:"";position:absolute;left:44%;bottom:0;width:10%;height:45%;background:#3b2a24}
-.tr::after{content:"";position:absolute;left:0;top:0;width:100%;height:68%;border-radius:50%;background:radial-gradient(circle at 30% 40%,#ff9a3c 0 4%,#0000 5%),radial-gradient(circle at 62% 30%,#ff9a3c 0 4%,#0000 5%),radial-gradient(circle at 50% 62%,#ff9a3c 0 4%,#0000 5%),radial-gradient(circle at 75% 58%,#ff9a3c 0 4%,#0000 5%),#2f4a3a}
-.wl{left:0;right:0;bottom:8%;height:9%;background:#6b5d55;border-top:3px solid #8a7b70}
-.bd{top:12px;padding:4px 10px;border-radius:99px;background:#0008;color:#fff;font-size:11.5px;font-weight:700;backdrop-filter:blur(6px)}
-.b1{left:12px}.b2{right:12px}
-.b3{left:12px;bottom:12px;top:auto;background:var(--rd)}
-.cap{right:12px;bottom:14px;font-size:10px;color:#ffffffcc}
-.cd{background:var(--cd);border:1px solid var(--ln);border-radius:18px;padding:16px}
-.pr{font-size:24px;font-weight:800;letter-spacing:-.03em}
-.pr s{font-size:15px;font-weight:500;color:var(--dm);margin-left:6px}
-.pr em{font-style:normal;font-size:12px;font-weight:700;color:#fff;background:var(--rd);padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:4px}
-.ad{margin:2px 0 10px;font-size:13px;color:var(--mu)}
-.tg{display:flex;flex-wrap:wrap;gap:6px}
-.tg span{font-size:12px;padding:4px 9px;border-radius:7px;background:var(--bl2);color:#2450c8;font-weight:600}
-.lb{display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:700;margin-bottom:12px}
-.lb span{font-size:11.5px;font-weight:500;color:var(--dm)}
-.ow{display:flex;gap:12px;align-items:center}
-.av{position:relative;flex:none;width:56px;height:56px;border-radius:50%;overflow:hidden;background:linear-gradient(#e3f3ff,#bfdcf3);border:2px dashed #9cc7ea;opacity:.82}
-.av::before{content:"";position:absolute;left:18px;top:9px;width:20px;height:22px;border-radius:50%;background:#8a6a52}
-.av::after{content:"";position:absolute;left:8px;top:32px;width:40px;height:30px;border-radius:20px 20px 0 0;background:#5b7fb0}
-.ow b{font-size:15px}
-.ow b small{font-size:11px;font-weight:700;color:var(--bl);margin-left:5px}
-.ow p{margin:1px 0 0;font-size:12px;color:var(--mu)}
-.q{margin:12px 0 0;padding:12px 14px;border-radius:14px;background:#f6f7fa;font-size:13.5px;line-height:1.6}
-.cs{display:flex;align-items:center;gap:12px;margin-top:12px;padding:10px 12px;border-radius:12px;background:#2a2a2e;color:#f5e6c8}
-.ct{position:relative;flex:none;width:64px;height:40px;border-radius:5px;background:#f5e6c8}
-.ct::before,.ct::after{content:"";position:absolute;top:13px;width:14px;height:14px;border-radius:50%;background:#2a2a2e;box-shadow:0 0 0 3px #c9b892}
-.ct::before{left:12px}.ct::after{right:12px}
-.cs p{margin:0;font-family:"Nanum Pen Script",cursive;font-size:19px;line-height:1.2}
-.cs small{display:block;font:500 10px var(--mo);color:#bfb39a}
-.hz{display:grid;gap:0;margin:0}
-.hz div{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid var(--ln);font-size:13px}
-.hz dt{color:var(--mu)}
-.hz dd{margin:0;font-weight:700}
-.hz .ok{color:#18a058}
-.hz .gx{color:var(--rd);text-shadow:2px 0 #7fd3ff66,-2px 0 #ff4d5e33;animation:fd 3s infinite}
-@keyframes fd{0%,100%{opacity:1}50%{opacity:.45}}
-.sp{position:relative;padding:14px 64px 14px 14px;border:1.5px dashed #ffb4bc;border-radius:14px;background:#fff7f8;font-size:13.5px;font-weight:700}
-.sp small{display:block;font-size:11px;font-weight:500;color:var(--mu);margin-bottom:2px}
-.se{position:absolute;right:12px;top:50%;width:44px;height:44px;margin-top:-22px;border-radius:50%;border:2.5px solid var(--rd);color:var(--rd);display:grid;place-items:center;font-weight:800;font-size:17px;transform:rotate(-12deg);opacity:.85}
-.ch{display:grid;gap:8px;padding:14px 12px;border-radius:14px;background:#f6f7fa}
-.say{justify-self:start;max-width:84%;padding:9px 13px;border-radius:16px 16px 16px 4px;background:#fff;border:1px solid var(--ln);font-size:13.5px}
-.me{justify-self:end;max-width:78%;padding:9px 13px;border-radius:16px 16px 4px 16px;background:var(--bl);color:#fff;font-size:13.5px}
-.fx{justify-self:center;font-size:11.5px;color:#7a5b00;background:#fff3cf;border:1px solid #ffe08a;border-radius:99px;padding:3px 11px}
-.rv{display:grid;gap:8px}
-.rv div{padding:10px 12px;border-radius:12px;background:#f6f7fa}
-.rv b{font-size:12px;color:var(--ye);letter-spacing:1px}
-.rv b small{color:var(--dm);font-weight:500;letter-spacing:0;margin-left:6px}
-.rv p{margin:2px 0 0;font-size:13px}
-.ep{display:grid;gap:8px}
-.ep div{position:relative;padding:11px 14px 11px 64px;border-radius:12px;background:#f6f7fa}
-.ep em{position:absolute;left:14px;top:12px;font:500 11px var(--mo);font-style:normal;color:var(--dm)}
-.ep b{display:block;font-size:14px}
+body{margin:0;color:var(--tx);font-family:Pretendard,"Noto Sans KR",sans-serif;font-size:14.5px;line-height:1.65;letter-spacing:-.01em;word-break:keep-all;padding:14px max(16px,env(safe-area-inset-left,0)) 48px;background:radial-gradient(90% 35% at 50% 0,#3a1f5e 0,#0c081600 70%),var(--bg)}
+a{color:inherit;text-decoration:none}
+.w{max-width:480px;margin:0 auto;display:grid;gap:14px}
+.hr{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;background:radial-gradient(1px 1px at 12% 18%,#fff 50%,#0000),radial-gradient(1.5px 1.5px at 78% 12%,#fff 50%,#0000),radial-gradient(1px 1px at 64% 30%,#fffc 50%,#0000),radial-gradient(1px 1px at 30% 8%,#fffa 50%,#0000),radial-gradient(1.5px 1.5px at 90% 40%,#fff9 50%,#0000),radial-gradient(1px 1px at 8% 44%,#fff8 50%,#0000),linear-gradient(180deg,#140b29 0,#2e1850 45%,#5a2a6e 75%,#7a3466 100%);box-shadow:0 30px 60px -24px #a46bff66,0 0 0 1px var(--ln)}
+.mn{position:absolute;right:12%;top:12%;width:34%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 38%,#fff6e0,#ffe2b0 55%,#f3c58a);box-shadow:0 0 40px 10px #ffd9a033,0 0 120px 40px #ff9fd022}
+.fg{position:absolute;left:50%;bottom:16%;width:56%;height:62%;margin-left:-30%}
+.fg i{position:absolute;display:block;background:#0b0614}
+.fg .hd{left:39%;top:15%;width:22%;height:18%;border-radius:50% 50% 44% 44%}
+.fg .nk{left:45%;top:30%;width:10%;height:9%}
+.fg .h1,.fg .h2{top:6%;width:4.5%;height:13%;clip-path:polygon(45% 0,100% 100%,0 100%)}
+.fg .h1{left:41%;transform:rotate(-16deg)}.fg .h2{left:54.5%;transform:rotate(16deg)}
+.fg .bd{left:6%;top:36%;width:88%;height:70%;border-radius:44% 44% 0 0/20% 20% 0 0}
+.fg .tl{left:90%;top:52%;width:24%;height:34%;background:none;border:5px solid #0000;border-right-color:#0b0614;border-bottom-color:#0b0614;border-radius:0 0 100% 0}
+.fg .tp{left:110%;top:46%;width:14px;height:14px;transform:rotate(225deg)}
+.fg .tp::before,.fg .tp::after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:#0b0614}
+.fg .tp::before{left:-7px;top:0}.fg .tp::after{left:0;top:-7px}
+.fg .ey{top:23%;width:4%;height:2.4%;border-radius:50%;background:#c79bff;box-shadow:0 0 10px 3px #a46bffcc}
+.fg .e1{left:43%}.fg .e2{left:53%}
+.hr::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0c08168c 0,#0000 22%,#0000 50%,#0c0816e6 82%,#0c0816)}
+.ht{position:absolute;z-index:1;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;gap:8px}
+.gp{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:99px;background:#0000004d;border:1px solid #ffffff26;backdrop-filter:blur(10px)}
+.gp i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--pk);margin-right:6px;box-shadow:0 0 8px var(--pk)}
+.gp b{color:#ff8a8a}
+.hb{position:absolute;z-index:1;left:20px;right:20px;bottom:20px}
+.kk{font:500 10.5px var(--mo);letter-spacing:.2em;color:#d7b8ff}
+.hb h1{margin:4px 0 0;font:900 36px/1.05 var(--se);letter-spacing:-.02em}
+.sb{margin-top:6px;font-size:12.5px;color:#d9cfee}
+.qt{margin:12px 0 0;font:700 15px/1.5 var(--se);color:#fff;padding-left:12px;border-left:2px solid var(--pk)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:12px 4px;text-align:center}
+.st div+div{border-left:1px solid var(--ln)}
+.st b{display:block;font-size:16px;font-weight:800}
+.st span{font-size:10.5px;color:var(--mu)}
+.st .r{color:#ff8a8a}
+.ct{display:grid;grid-template-columns:1fr 52px;gap:8px}
+.go{height:52px;border-radius:16px;background:var(--gd);display:grid;place-items:center;font-weight:800;font-size:15px;box-shadow:0 12px 26px -10px #a46bffcc,inset 0 1px 0 #ffffff33}
+.lk{height:52px;border-radius:16px;background:var(--s2);border:1px solid var(--ln);display:grid;place-items:center;font-size:20px}
+.tb{display:flex;gap:4px;padding:4px;background:var(--s1);border:1px solid var(--ln);border-radius:14px;font-size:13px;text-align:center}
+.tb a{flex:1;padding:7px 0;border-radius:10px;color:var(--mu)}
+.tb a:first-child{background:var(--s3);color:var(--tx);font-weight:700}
+.id{position:relative;border-radius:20px;padding:16px;overflow:hidden;background:linear-gradient(135deg,#2a1a4a,#1a1030 60%,#24123a);border:1px solid #a46bff55;box-shadow:0 18px 36px #0009}
+.id::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,#0000 30%,#ffffff12 45%,#0000 60%)}
+.ih{display:flex;justify-content:space-between;font:500 10.5px var(--mo);letter-spacing:.14em;color:#d7b8ff}
+.ib{display:flex;gap:14px;align-items:center;margin-top:12px}
+.ip{position:relative;flex:none;width:76px;height:96px;border-radius:10px;overflow:hidden;background:linear-gradient(#3b2560,#1c1030);box-shadow:0 0 0 2px #ffffff26}
+.ip::before{content:"";position:absolute;left:26px;top:24px;width:24px;height:27px;border-radius:50% 50% 44% 44%;background:#0b0614}
+.ip::after{content:"";position:absolute;left:6px;top:56px;width:64px;height:50px;border-radius:44% 44% 0 0/30% 30% 0 0;background:#0b0614}
+.ip i{position:absolute;top:13px;width:5px;height:14px;background:#0b0614;clip-path:polygon(45% 0,100% 100%,0 100%);z-index:1}
+.ip i:nth-child(1){left:28px;transform:rotate(-16deg)}.ip i:nth-child(2){left:43px;transform:rotate(16deg)}
+.in h2{margin:0;font:900 22px/1.2 var(--se)}
+.in p{margin:2px 0 0;font:500 11.5px var(--mo);color:var(--mu)}
+.dl{margin:12px 0 0;font-size:12.5px;position:relative}
+.dl div{display:grid;grid-template-columns:62px 1fr;gap:8px;padding:6px 0;border-top:1px solid #ffffff14}
+.dl dt{font:500 10.5px var(--mo);color:var(--dm);padding-top:2px}
+.dl dd{margin:0;font-weight:600}
+.dl .f{color:#ff8a8a}
+.bc{height:22px;margin-top:10px;opacity:.6;background:repeating-linear-gradient(90deg,#fff 0 1px,#0000 1px 3px,#fff 3px 5px,#0000 5px 6px,#fff 6px 7px,#0000 7px 10px)}
+.cd{background:var(--s1);border:1px solid var(--ln);border-radius:22px;padding:18px}
+.lb{display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:800;margin-bottom:12px}
+.lb span{font:400 10.5px var(--mo);color:var(--dm)}
+.rp{display:grid;gap:10px}
+.rw span{display:flex;justify-content:space-between;font-size:12px;color:var(--mu);margin-bottom:4px}
+.rw b{font-family:var(--mo);font-weight:500;color:var(--tx)}
+.br{height:9px;border-radius:99px;background:var(--s3);overflow:hidden}
+.br i{display:block;height:100%;border-radius:99px;background:var(--gd)}
+.mh{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.mh div{text-align:center;padding:8px 0;border-radius:10px;background:var(--s2);font:500 10.5px var(--mo);color:var(--dm)}
+.mh b{display:block;font:800 18px Pretendard,"Noto Sans KR",sans-serif;color:#ff8a8a}
+.sp{display:inline-block;margin-top:2px;padding:2px 10px;border:2px solid #ff6b6b;border-radius:6px;color:#ff6b6b;font:800 12.5px "Noto Sans KR",sans-serif;letter-spacing:.14em;transform:rotate(-4deg)}
+.ctr{position:relative;border-radius:16px;padding:16px;background:linear-gradient(#f7f1ff,#ece2fb);color:#2a1d40}
+.ctr h3{margin:0 0 8px;text-align:center;font:900 16px var(--se);letter-spacing:.06em}
+.ctr p{display:flex;gap:8px;margin:0;padding:7px 0;border-top:1px dashed #2a1d4033;font-size:13px}
+.ctr p i{flex:none;width:16px;height:16px;margin-top:2px;border-radius:4px;border:1.5px solid #6b4fa0;font-style:normal;font-size:11px;line-height:13px;text-align:center;color:#6b4fa0}
+.sg2{display:flex;justify-content:space-between;align-items:flex-end;margin-top:10px;font-size:11px;color:#6b5a85}
+.sg2 b{font:400 24px "Nanum Pen Script",cursive;color:#3a2a58;transform:rotate(-3deg);display:inline-block}
+.bt2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.bt2 div{padding:9px;border-radius:12px;text-align:center;font-weight:800;font-size:13.5px}
+.bt2 .y{background:#6b4fa0;color:#fff}.bt2 .n{background:#fff;border:1px solid #2a1d4026;color:#6b4fa0}
+.lg{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;font-size:11px;color:var(--mu)}
+.lg span{padding:3px 9px;border-radius:7px;background:var(--s2)}
+.ch{display:grid;gap:9px;padding:14px 12px;border-radius:16px;background:#0a0713;border:1px solid var(--ln)}
+.me{justify-self:end;max-width:76%;padding:9px 13px;border-radius:16px 16px 4px 16px;background:#3a3150;font-size:13.5px}
+.jh{display:flex;align-items:flex-end;gap:8px;max-width:88%}
+.av{position:relative;flex:none;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#0b0614 34%,#0000 35%),linear-gradient(#3b2560,#1c1030);box-shadow:0 0 0 1.5px #a46bff99}
+.sa{padding:9px 13px;border-radius:16px 16px 16px 4px;background:var(--s3);font-size:13.5px}
+.bx{justify-self:center;font-size:11.5px;color:#e6d4ff;background:#a46bff1f;border:1px solid #a46bff55;border-radius:99px;padding:3px 11px;text-align:center}
+.cl{justify-self:center;font-size:11.5px;color:#ffd0e6;background:#ff6fb51a;border:1px dashed #ff6fb566;border-radius:8px;padding:4px 11px;text-align:center}
+.mm{border-radius:8px;padding:10px 14px 12px;color:#2a1d40;background:repeating-linear-gradient(#f6f0ff 0 27px,#ddd0f2 27px 28px);font-family:"Nanum Pen Script",cursive;font-size:20px;line-height:28px;transform:rotate(-.7deg);box-shadow:0 10px 20px #0008}
+.mm .t{font:500 11px var(--mo);line-height:28px;color:#7a6a95}
+.mm p{margin:0}
+.mm s{color:#9a8ab5}
+.mm .x{color:#d6337f}
+.ep{display:grid;gap:0}
+.ep div{position:relative;padding:0 0 16px 46px}
+.ep div:last-child{padding-bottom:0}
+.ep div::before{content:"";position:absolute;left:15px;top:30px;bottom:0;width:2px;background:repeating-linear-gradient(#ffffff22 0 4px,#0000 4px 8px)}
+.ep div:last-child::before{display:none}
+.ep em{position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font:500 10px var(--mo);font-style:normal;color:var(--dm);border:1.5px solid #ffffff26;background:var(--s2)}
+.ep b{display:block;font-size:14px;padding-top:4px}
 .ep span{font-size:12.5px;color:var(--mu)}
-.ep i{position:absolute;right:12px;top:11px;font-style:normal;font-size:11px;color:var(--dm)}
-.ep .on{background:var(--bl2);box-shadow:inset 0 0 0 1.5px #2f6bff66}
-.ep .on em,.ep .on i{color:var(--bl);font-weight:600}
-.ep div:not(.on) b,.ep div:not(.on) span{opacity:.6}
+.ep i{position:absolute;right:0;top:5px;font-style:normal;font-size:11px;color:var(--dm)}
+.ep .on em{color:#fff;border-color:var(--pk);background:#3a1430;box-shadow:0 0 12px #ff6fb566}
+.ep .on i{color:var(--pk);font-weight:700}
+.ep div:not(.on) b,.ep div:not(.on) span{opacity:.55}
 .pe{display:grid;gap:8px}
-.pe>div{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:center;padding:11px 12px;border-radius:14px;background:#f6f7fa}
-.pe i{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-style:normal;font-size:19px;background:#fff}
+.pe>div{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;padding:11px 12px;border-radius:16px;background:var(--s2)}
+.pe i{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-style:normal;font-size:20px;background:var(--s3)}
 .pe b{display:block;font-size:13.5px}
-.pe b small{font-weight:400;color:var(--mu);margin-left:5px;font-size:11.5px}
+.pe b small{font-weight:400;color:var(--mu);margin-left:5px;font-size:11px}
 .pe span{font-size:12.5px;color:var(--mu);line-height:1.5}
-.cp{display:flex;flex-wrap:wrap;gap:8px}
-.cp span{font-size:13px;padding:8px 13px;border-radius:12px;background:#fff;border:1px solid var(--ln)}
-.cp span::before{content:"💬 ";font-size:11px}
-.ba{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.ba div{height:50px;border-radius:14px;display:grid;place-items:center;font-weight:700;font-size:14.5px}
-.ba .a{background:#fff;border:1px solid var(--ln);color:var(--tx)}
-.ba .b{background:var(--bl);color:#fff;box-shadow:0 8px 18px -6px #2f6bff99}
-.ft{text-align:center;font-size:11.5px;color:var(--dm);line-height:1.8}
-.ft b{color:var(--mu);font-weight:600}
+.cp{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.cp span{font-size:13px;padding:8px 13px;border-radius:12px;background:var(--s2);border:1px solid var(--ln)}
+.cp span::before{content:"✦ ";color:var(--pk)}
+.mu{color:var(--mu);font-size:12.5px;margin:0}
+.fo{text-align:center;font-size:11px;color:var(--dm);line-height:1.8}
+.fo b{color:var(--mu);font-weight:600}
 </style>
 <div class="w">
-<div class="ab"><div class="lo">⌂</div><b>방방곡곡</b><span>서울 · 월세 · 단독주택</span></div>
 
-<div class="pic"><div class="sun"></div><div class="gd"></div><div class="tr"></div>
-<div class="hs"><div class="wi w1"><div class="gst"></div></div><div class="wi w2"></div><div class="wi w3"></div><div class="dr"></div></div>
-<div class="wl"></div>
-<span class="bd b1">📷 1 / 12</span><span class="bd b2">👀 조회수 48.2만</span><span class="bd b3">🔥 급매</span><span class="cap">※ 사진 속 인물은 빛 반사입니다</span></div>
-
-<div class="cd">
-<div class="pr">월세 500 / 30<s>50</s><em>시세의 절반</em></div>
-<p class="ad">서울 언덕 동네 · 붉은 벽돌 2층 단독주택 · 매물번호 #1988</p>
-<div class="tg"><span>2층 전체</span><span>방 2</span><span>남향</span><span>역 도보 7분</span><span>1988년 준공</span><span>마당 감나무</span><span>관리비 0원</span></div>
+<div class="hr"><div class="mn"></div>
+<div class="fg"><i class="h1"></i><i class="h2"></i><i class="hd"></i><i class="nk"></i><i class="bd"></i><i class="tl"></i><i class="tp"></i><i class="ey e1"></i><i class="ey e2"></i></div>
+<div class="ht"><span class="gp"><i></i>꿈 접속 중 · 01:30</span><span class="gp">📉 실적 <b>F</b></span></div>
+<div class="hb"><div class="kk">DREAM DEMON · NIGHT TEAM 3</div><h1>백정훈</h1>
+<div class="sb">몽마(인큐버스) · 24세 · 182cm · 실적 누적 0건</div>
+<p class="qt">"유혹이 직업인데요… 손잡는 것도 떨려요."</p></div>
 </div>
 
-<div class="cd"><div class="lb">집주인 한마디<span>응답률 100% · 항상 집에 있음</span></div>
-<div class="ow"><div class="av"></div><div><b>백정훈<small>✓ 집주인 인증(?)</small></b><p>24세 · 회원 가입 1988년 · 청재킷 · 워크맨</p></div></div>
-<div class="q">"채광 좋고 역세권이에요. 밤에 가끔 소리 나는 건 건물이 숨 쉬는 거예요. 진짜예요. 제가 아니에요."</div>
-<div class="cs"><div class="ct"></div><div><small>MIX TAPE · A면</small><p>계약하시면 노래 녹음해 드려요</p></div></div>
-</div>
+<div class="st"><div><b class="r">0</b><span>실적(건)</span></div><div><b>0/1000</b><span>설렘 에너지</span></div><div><b class="r">D-10</b><span>퇴출까지</span></div><div><b>💜</b><span>꼬리 탁탁</span></div></div>
+<div class="ct"><div class="go">🌙 꿈에 접속하기</div><div class="lk">📜</div></div>
+<div class="tb"><a href="#a">사원증</a><a href="#b">계약서</a><a href="#c">대화</a><a href="#d">에피소드</a></div>
 
-<div class="cd"><div class="lb">하자 고지<span>중개사 확인 사항</span></div>
-<dl class="hz">
-<div><dt>누수</dt><dd class="ok">없음 ✓</dd></div>
-<div><dt>결로 · 곰팡이</dt><dd class="ok">없음 ✓</dd></div>
-<div><dt>층간 소음</dt><dd class="ok">없음 ✓ (단독주택)</dd></div>
-<div><dt>기타</dt><dd class="gx">집주인이 거주 중입니다 (사망)</dd></div>
-</dl></div>
+<div class="id" id="a"><div class="ih"><span>몽마 관리공단 · 사원증</span><span>NIGHT TEAM 3</span></div>
+<div class="ib"><div class="ip"><i></i><i></i></div><div class="in"><h2>백정훈</h2><p>등록번호 M-0717</p><p>현장 배치 3년 차</p></div></div>
+<dl class="dl">
+<div><dt>소속</dt><dd>야간 3팀 · 서울 지역 꿈 담당</dd></div>
+<div><dt>등급</dt><dd class="f">F · 실적 누적 0건</dd></div>
+<div><dt>특이사항</dt><dd>꿈 계약서를 한 줄씩 다 읽음</dd></div>
+<div><dt>규정 복장</dt><dd>실크 셔츠 단추 셋 풀기 (본인이 자꾸 잠금)</dd></div>
+</dl><div class="bc"></div></div>
 
-<div class="sp"><small>특약 사항</small>임차인은 하루 한 번 이상 집주인과 대화한다.<div class="se">백</div></div>
+<div class="cd"><div class="lb">이번 달 실적 보고서<span>REPORT · NOV</span></div>
+<div class="rp">
+<div class="rw"><span>설렘 에너지 납품<b>0 / 1000</b></span><div class="br"><i style="width:0"></i></div></div>
+<div class="mh"><div><b>F</b>9월</div><div><b>F</b>10월</div><div><b>F?</b>11월</div></div>
+<div><span class="sp">퇴출 예정</span> <span class="mu">미달 시 '꿈속 엑스트라'로 강등됩니다.</span></div>
+</div></div>
 
-<div class="cd"><div class="lb">집 보기 미리보기<span>토요일 17:00</span></div>
+<div class="ctr" id="b"><h3>꿈 계약서</h3>
+<p><i>✓</i>제1조. 본 몽마는 꿈 주인의 동의 없이 유혹하지 않습니다.</p>
+<p><i>✓</i>제3조. 본 꿈에서는 설렘이 발생할 수 있습니다.</p>
+<p><i>✓</i>제7조. 꿈 주인은 언제든 "그만"이라고 말할 수 있습니다.</p>
+<div class="sg2"><span>담당 몽마 서명</span><b>백정훈 (떨림)</b></div>
+<div class="bt2"><div class="y">동의하기</div><div class="n">그만</div></div></div>
+
+<div class="cd" id="c"><div class="lb">대화 미리보기<span>01:30 · 호텔 스위트룸</span></div>
+<div class="lg"><span>"대사"</span><span>( ) 꼬리·뿔·눈</span><span>『 』 계약서·공단</span></div>
 <div class="ch">
-<div class="say">"채광 좋죠? 여기 남향이라 해가 진짜 잘 들어요."</div>
-<div class="fx">( 부엌 찬장이 스르륵 열린다 )</div>
-<div class="say">"…바람이에요. 남향이라 바람도 잘 들어요."</div>
-<div class="me">여기 혹시 무슨 일 있었던 집 아니에요?</div>
-<div class="fx">( 형광등이 깜빡, 깜빡 )</div>
-<div class="say">"하자 고지 의무라는 게 있잖아요. 그래서 말인데요… 저 여기 살아요. 죽어서."</div>
+<div class="jh"><div class="av"></div><div class="sa">"오, 오늘 밤… 당신의 꿈은 내 거예요."</div></div>
+<div class="cl">( 꼬리 끝이 바닥을 탁, 탁 친다 )</div>
+<div class="me">그거 큐카드 아니에요?</div>
+<div class="jh"><div class="av"></div><div class="sa">"아, 아니에요. …네. 큐카드예요. 매뉴얼 37쪽이요."</div></div>
+<div class="bx">『 꿈 계약서 제3조: 본 꿈에서는 설렘이 발생할 수 있습니다. 』</div>
+<div class="cl">( 귀 끝까지 빨개진 채, 꼬리가 하트 모양으로 말린다 )</div>
 </div></div>
 
-<div class="cd"><div class="lb">전 세입자 후기<span>평균 거주 2.3개월</span></div>
-<div class="rv">
-<div><b>★★★★★<small>3개월 거주</small></b><p>밤마다 설거지가 되어 있어요. 무서운데 편해요.</p></div>
-<div><b>★★☆☆☆<small>2개월 거주</small></b><p>새벽 3시에 누가 카세트로 80년대 노래를 틀어 줌. 노래는 좋았음.</p></div>
-<div><b>★★★★☆<small>1개월 거주</small></b><p>자고 일어나면 이불이 덮여 있어요. 혼자 사는데요.</p></div>
-</div></div>
+<div class="cd"><div class="lb">유혹 매뉴얼 개정 12판<span>정훈의 큐카드</span></div>
+<div class="mm"><div class="t">p.37 · 호텔 스위트룸 세팅</div>
+<p>"오늘 밤, 당신의 꿈은 내 거예요." ← 목소리 낮게</p>
+<p><s>"깨어나기 싫게 만들어 줄게요."</s> 너무 셈</p>
+<p>※ 꿈 주인이 피곤해 보이면 우유 먼저</p>
+<p class="x">※ 계약서 먼저!!! (또 까먹음)</p></div></div>
 
-<div class="cd"><div class="lb">에피소드<span>1 / 5 진행 중</span></div>
+<div class="cd" id="d"><div class="lb">에피소드<span>1 / 5 진행 중</span></div>
 <div class="ep">
-<div class="on"><em>EP.1</em><b>집 구경</b><span>집주인인 척하는 유령의 필사적인 영업.</span><i>진행 중</i></div>
-<div><em>EP.2</em><b>계약 협상</b><span>"월세는 깎아 드릴게요. 대신 특약 하나만요."</span><i>🔒</i></div>
-<div><em>EP.3</em><b>동거</b><span>늦게 오는 날엔 현관 센서등이 밤새 켜져 있다.</span><i>🔒</i></div>
-<div><em>EP.4</em><b>선명해지는 손</b><span>처음엔 통과하던 손이, 조금씩 닿기 시작한다.</span><i>🔒</i></div>
-<div><em>EP.5</em><b>남는 쪽을 고르다</b><span>"오늘도 노을 같이 봐요."</span><i>🔒</i></div>
+<div class="on"><em>EP.1</em><b>첫 접속</b><span>매뉴얼대로 유혹하려다 계약서 순서부터 틀린다.</span><i>진행 중</i></div>
+<div><em>EP.2</em><b>단골 꿈</b><span>공단에 몰래 '연속 배정 신청'을 낸다.</span><i>🔒</i></div>
+<div><em>EP.3</em><b>채집 거부</b><span>"채집하면 내일 피곤하잖아요. 오늘은 안 해요."</span><i>🔒</i></div>
+<div><em>EP.4</em><b>퇴출 경고</b><span>첫 입맞춤은 채집이 아니라 고백이어야 한다.</span><i>🔒</i></div>
+<div><em>EP.5</em><b>현실 출장</b><span>꿈 밖에서는 무대를 바꿀 수 없어서, 더 떨린다.</span><i>🔒</i></div>
 </div></div>
 
-<div class="cd"><div class="lb">동네 이웃</div>
+<div class="cd"><div class="lb">공단 사람들</div>
 <div class="pe">
-<div><i>👵</i><div><b>말순 할머니<small>86 · 옆집</small></b><span>1988년의 정훈을 기억하는 유일한 사람. "총각, 아직 거기 있어?"</span></div></div>
-<div><i>🏢</i><div><b>김 사장<small>58 · 희망부동산</small></b><span>이 집 때문에 머리가 다 빠졌다. "앱에 매물이요? 제가 올린 적 없는데요…?"</span></div></div>
-<div><i>🔮</i><div><b>청룡 보살<small>40대 · 무당</small></b><span>퇴마하러 왔다가 고스톱 친구가 됐다. 막걸리 들고 자주 온다.</span></div></div>
+<div><i>💋</i><div><b>강세라<small>서큐버스 · 실적 1위 사수</small></b><span>"정훈아, 손부터 잡으라고 했지. 계약서 말고." 답답해하면서도 몰래 응원한다.</span></div></div>
+<div><i>📋</i><div><b>박 팀장<small>야간 3팀장</small></b><span>실적표 태블릿을 들고 다니는 정 많은 꼰대. 퇴출 도장을 들고 고민 중.</span></div></div>
+<div><i>👥</i><div><b>꿈속 엑스트라<small>당신의 기억 출신</small></b><span>자꾸 정훈의 계획을 방해한다. 정훈의 꼬리가 꼿꼿이 서는 이유.</span></div></div>
 </div></div>
 
-<div class="cd"><div class="lb">이렇게 물어보세요</div>
-<div class="cp"><span>여기 무슨 일 있었던 집 아니에요?</span><span>월세 깎아 주세요</span><span>저기… 발 떠 있는데요</span><span>카세트 틀어 줘요</span><span>같이 살아도 돼요?</span></div></div>
+<div class="cd"><div class="lb">이렇게 말 걸어 보세요</div>
+<div class="cp"><span>계약서 다시 읽어 줘</span><span>매뉴얼대로 해 봐</span><span>꼬리 만져 봐도 돼?</span><span>오늘 너무 힘들었어</span><span>채집해도 돼</span></div>
+<p class="mu">유혹은 서툴러도 동의는 철저하게. 실적과 마음 사이에서, 오늘도 꼬리는 하트로 말린다.</p></div>
 
-<div class="ba"><div class="a">💬 집주인에게 문의</div><div class="b">📅 방문 예약</div></div>
-
-<div class="ft"><b>유저 성별 자유 · NL / BL</b><br>방방곡곡, 매물, 등장인물은 모두 가상의 설정입니다.</div>
+<div class="fo"><b>유저 성별 자유 · NL / BL</b><br>몽마 관리공단과 등장인물은 모두 가상의 설정입니다.</div>
 </div>
