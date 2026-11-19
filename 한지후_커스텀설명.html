@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&family=Nanum+Pen+Script&display=swap">
 <style>
-:root{--im:url("https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg");--jh:url("https://raw.githubusercontent.com/akari383/-/c37655c29443876b0f9aa872d43aedbbfa8cd6e1/images/jihoo.jpg");--bg:#09090d;--s1:#131319;--s2:#1c1c26;--s3:#272734;--ln:#ffffff14;--tx:#f5f4fa;--mu:#a09cb1;--dm:#6f6b80;--pk:#ff4d8d;--gd:linear-gradient(135deg,#ff4d8d,#b45cff 55%,#6d6bff);--ok:#3ddc84;--wa:#ffc94d;--er:#ff5c6c;--mo:"IBM Plex Mono",monospace;color-scheme:dark}
+:root{--bg:#09090d;--s1:#131319;--s2:#1c1c26;--s3:#272734;--ln:#ffffff14;--tx:#f5f4fa;--mu:#a09cb1;--dm:#6f6b80;--pk:#ff4d8d;--gd:linear-gradient(135deg,#ff4d8d,#b45cff 55%,#6d6bff);--ok:#3ddc84;--wa:#ffc94d;--er:#ff5c6c;--mo:"IBM Plex Mono",monospace;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(90% 40% at 50% 0,#3a1838 0,#09090d00 70%),var(--bg);color:var(--tx);font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-size:14.5px;line-height:1.6;letter-spacing:-.01em;padding:14px max(16px,env(safe-area-inset-left,0)) 48px;word-break:keep-all}
 a{color:inherit;text-decoration:none}
@@ -11,8 +11,9 @@ a{color:inherit;text-decoration:none}
 .lo{width:26px;height:26px;border-radius:8px;background:var(--gd);display:grid;place-items:center;font-size:13px;box-shadow:0 4px 14px #ff4d8d55}
 .nv b{font-size:16px;font-weight:800;letter-spacing:-.03em}
 .nv span{margin-left:auto;font-size:11.5px;color:var(--mu);padding:3px 9px;border:1px solid var(--ln);border-radius:99px}
-.hr{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;background:var(--im) center 20%/cover;box-shadow:0 30px 60px -25px #ff4d8d44,0 0 0 1px var(--ln)}
-.hr::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#09090d66 0,#0000 22%,#0000 48%,#09090dd9 80%,#09090d)}
+.hr{position:relative;height:0;padding-top:125%;border-radius:26px;overflow:hidden;background:#1c1c26;box-shadow:0 30px 60px -25px #ff4d8d44,0 0 0 1px var(--ln)}
+.hr>img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hr::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg,#09090d66 0,#0000 22%,#0000 48%,#09090dd9 80%,#09090d)}
 .ht{position:absolute;z-index:1;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;gap:8px}
 .gp{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:99px;background:#0000004d;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid #ffffff26}
 .gp i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:6px;box-shadow:0 0 8px var(--ok)}
@@ -41,14 +42,14 @@ a{color:inherit;text-decoration:none}
 .of{display:flex;align-items:center;gap:6px;margin-top:14px;padding-top:12px;border-top:1px solid var(--ln);font-size:12px;color:var(--mu)}
 .of i{width:16px;height:16px;border-radius:5px;background:var(--gd)}
 .gx{position:relative;height:150px;border-radius:22px;overflow:hidden;background:#000}
-.gx>i{position:absolute;inset:0;background:var(--im) center 24%/cover}
-.gx>i:nth-child(1){filter:grayscale(1) brightness(.4) contrast(1.3)}
-.gx>i:nth-child(2),.gx>i:nth-child(3){mix-blend-mode:screen;opacity:.75;animation:gl 2.2s steps(1) infinite}
-.gx>i:nth-child(2){filter:grayscale(1) sepia(1) hue-rotate(300deg) saturate(7);transform:translateX(-9px)}
-.gx>i:nth-child(3){filter:grayscale(1) sepia(1) hue-rotate(140deg) saturate(7);transform:translateX(9px);animation-direction:reverse}
-.gx::after{content:"";position:absolute;inset:0;z-index:2;background:repeating-linear-gradient(#0000 0 2px,#0000008c 2px 3px)}
+.gx>img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+.gx>img:nth-child(1){filter:grayscale(1) brightness(.4) contrast(1.3)}
+.gx>img:nth-child(2),.gx>img:nth-child(3){mix-blend-mode:screen;opacity:.75;animation:gl 2.2s steps(1) infinite}
+.gx>img:nth-child(2){filter:grayscale(1) sepia(1) hue-rotate(300deg) saturate(7);transform:translateX(-9px)}
+.gx>img:nth-child(3){filter:grayscale(1) sepia(1) hue-rotate(140deg) saturate(7);transform:translateX(9px);animation-direction:reverse}
+.gx::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:2;background:repeating-linear-gradient(#0000 0 2px,#0000008c 2px 3px)}
 @keyframes gl{0%{clip-path:inset(18% 0 60% 0)}25%{clip-path:inset(66% 0 12% 0)}50%{clip-path:inset(40% 0 42% 0)}75%{clip-path:inset(6% 0 82% 0)}}
-.gt{position:absolute;inset:0;z-index:3;display:grid;place-content:center;text-align:center;gap:2px;background:radial-gradient(60% 55% at 50% 50%,#000000b3,#0000)}
+.gt{position:absolute;top:0;right:0;bottom:0;left:0;z-index:3;display:grid;place-content:center;text-align:center;gap:2px;background:radial-gradient(60% 55% at 50% 50%,#000000b3,#0000)}
 .gt b{font-family:var(--mo);font-size:11px;font-weight:500;letter-spacing:.2em;color:var(--er)}
 .gt span{font-size:17px;font-weight:800;text-shadow:2px 0 #ff4d8d,-2px 0 #36d6ff}
 .gt small{font-size:11.5px;color:#cfcbe0}
@@ -59,7 +60,9 @@ a{color:inherit;text-decoration:none}
 .cb b{margin-left:auto;font-weight:500;color:var(--er);border:1px solid var(--er);border-radius:4px;padding:0 5px}
 .cp{padding:16px;display:grid;gap:14px}
 .id{display:flex;align-items:center;gap:12px}
-.av{position:relative;flex:none;width:60px;height:76px;border-radius:12px;background:#fff var(--jh) 50% 28%/135% auto;box-shadow:0 0 0 1px #ffffff26,0 8px 18px #0008}
+.av{position:relative;flex:none;width:60px;height:76px;border-radius:12px;background:#fff;box-shadow:0 0 0 1px #ffffff26,0 8px 18px #0008}
+.av span{position:absolute;top:0;right:0;bottom:0;left:0;border-radius:12px;overflow:hidden}
+.av img{position:absolute;width:135%;max-width:none;left:-17.5%;top:-2%}
 .av i{position:absolute;right:-3px;bottom:-3px;width:14px;height:14px;border-radius:50%;background:var(--ok);border:3px solid #0e0e13}
 .id .n{font-size:19px;font-weight:800}
 .id .n small{font-size:12px;font-weight:400;color:var(--mu);margin-left:6px}
@@ -93,7 +96,8 @@ a{color:inherit;text-decoration:none}
 .lg span{padding:3px 9px;border-radius:8px;background:var(--s2)}
 .ch{border-radius:18px;background:var(--bg);border:1px solid var(--ln);overflow:hidden}
 .chh{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--ln);background:var(--s1)}
-.ca{flex:none;width:34px;height:34px;border-radius:50%;background:var(--im) 61% 10%/225% auto}
+.ca{position:relative;flex:none;width:34px;height:34px;border-radius:50%;overflow:hidden;background:#272734}
+.ca img{position:absolute;width:225%;max-width:none;left:-76%;top:-15%}
 .chh b{display:block;font-size:13.5px}
 .chh span{font-size:11px;color:var(--ok)}
 .cbd{display:grid;gap:8px;padding:14px 12px}
@@ -104,7 +108,8 @@ a{color:inherit;text-decoration:none}
 .bb{padding:9px 13px;border-radius:18px 18px 18px 4px;background:var(--s2);font-size:13.5px;line-height:1.5}
 .th{margin-left:33px;max-width:80%;padding:8px 12px;border-radius:14px;border:1.5px dashed #ffffff2e;color:var(--mu);font-size:12.5px;line-height:1.5}
 .th em{display:flex;align-items:center;gap:5px;margin-bottom:2px;font-style:normal;font-family:var(--mo);font-size:10.5px;color:var(--dm)}
-.th em b{flex:none;width:18px;height:18px;border-radius:50%;background:#fff var(--jh) 50% 40%/250% auto}
+.th em b{position:relative;flex:none;width:18px;height:18px;border-radius:50%;overflow:hidden;background:#fff}
+.th em b img{position:absolute;width:250%;max-width:none;left:-75%;top:-60%}
 .sy{justify-self:center;font-family:var(--mo);font-size:10.5px;color:var(--wa);background:#ffc94d17;border:1px solid #ffc94d40;border-radius:99px;padding:3px 10px}
 .ty{display:flex;gap:4px;padding:13px 14px}
 .ty i{width:6px;height:6px;border-radius:50%;background:var(--mu);animation:bo 1.2s infinite}
@@ -136,7 +141,7 @@ a{color:inherit;text-decoration:none}
 <div class="w">
 <div class="nv"><div class="lo">💗</div><b>두근챗</b><span>로맨스 · 실시간 랭킹</span></div>
 
-<div class="hr">
+<div class="hr"><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt="강시혁">
 <div class="ht"><span class="gp">👑 실시간 1위</span><span class="gp"><i></i>지금 대화 가능</span></div>
 <div class="hb">
 <div class="nm">강시혁<span class="vf">✓ 공식 AI</span></div>
@@ -156,14 +161,14 @@ a{color:inherit;text-decoration:none}
 <div class="of"><i></i>(주)두근랩스 공식 캐릭터 · 24시간 실시간 응답</div>
 </div>
 
-<div class="gx" id="b"><i></i><i></i><i></i>
+<div class="gx" id="b"><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt="">
 <div class="gt"><b>ERR · CHARACTER_BREAK</b><span>⚠️ 캐릭터 이탈이 감지되었습니다</span><small>응답 재학습 중… 화면 뒤가 보입니다</small></div>
 </div>
 
 <div class="cs">
 <div class="cb"><i></i><i></i><i></i>admin.doogeun · 상담원 콘솔<b>대외비</b></div>
 <div class="cp">
-<div class="id"><div class="av"><i></i></div><div><div class="n">한지후<small>26 · 남 · 181cm</small></div><div class="r">// 강시혁 야간 담당 · 상담원 07</div></div></div>
+<div class="id"><div class="av"><span><img src="https://raw.githubusercontent.com/akari383/-/c37655c29443876b0f9aa872d43aedbbfa8cd6e1/images/jihoo.jpg" alt="한지후"></span><i></i></div><div><div class="n">한지후<small>26 · 남 · 181cm</small></div><div class="r">// 강시혁 야간 담당 · 상담원 07</div></div></div>
 <div class="kp"><div><span>오늘 처리</span><b>412건</b></div><div><span>오늘 정산</span><b>₩4,944</b></div><div><span>이탈 경고</span><b class="e">7/10</b></div></div>
 <div class="gb"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 <dl class="dl">
@@ -193,15 +198,15 @@ a{color:inherit;text-decoration:none}
 <div class="lb">대화 미리보기<span>새벽 2시의 타이핑룸</span></div>
 <div class="lg"><span>말풍선 = 고객에게 전송</span><span>( ) 지후 속마음</span><span>[ ] 앱 시스템</span></div>
 <div class="ch">
-<div class="chh"><div class="ca"></div><div><b>강시혁</b><span>● 보통 즉시 답장</span></div></div>
+<div class="chh"><div class="ca"><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""></div><div><b>강시혁</b><span>● 보통 즉시 답장</span></div></div>
 <div class="cbd">
 <div class="tm">오전 2:14</div>
 <div class="me">오늘 진짜 힘들었어</div>
-<div class="ai"><div class="ca"></div><div class="bb">울지 마. 네 눈물은 내 주식보다 비싸니까.</div></div>
-<div class="th"><em><b></b>지후 속마음 · 고객에겐 안 보임</em>(……이건 아니다.)<br>(오늘 글자에 힘이 하나도 없네.)</div>
-<div class="ai"><div class="ca"></div><div class="bb">있잖아요. 이건 시혁이 말고 그냥 제가 하는 말인데. 오늘 수고했어요. 진짜로.</div></div>
+<div class="ai"><div class="ca"><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""></div><div class="bb">울지 마. 네 눈물은 내 주식보다 비싸니까.</div></div>
+<div class="th"><em><b><img src="https://raw.githubusercontent.com/akari383/-/c37655c29443876b0f9aa872d43aedbbfa8cd6e1/images/jihoo.jpg" alt=""></b>지후 속마음 · 고객에겐 안 보임</em>(……이건 아니다.)<br>(오늘 글자에 힘이 하나도 없네.)</div>
+<div class="ai"><div class="ca"><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""></div><div class="bb">있잖아요. 이건 시혁이 말고 그냥 제가 하는 말인데. 오늘 수고했어요. 진짜로.</div></div>
 <div class="sy">⚠️ 캐릭터 이탈이 감지되었습니다</div>
-<div class="ai"><div class="ca"></div><div class="bb ty"><i></i><i></i><i></i></div></div>
+<div class="ai"><div class="ca"><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""></div><div class="bb ty"><i></i><i></i><i></i></div></div>
 </div>
 <div class="in">메시지를 입력하세요<b>↑</b></div>
 </div>

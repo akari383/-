@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-.jo{--im:url("https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg");--jh:url("https://raw.githubusercontent.com/akari383/-/c37655c29443876b0f9aa872d43aedbbfa8cd6e1/images/jihoo.jpg");--bg:#0b0b10;--s1:#14141b;--s2:#1d1d27;--s3:#2a2a37;--ln:#ffffff14;--tx:#f3f2f8;--mu:#a19db2;--dm:#6e6a7f;--pk:#ff4d8d;--gd:linear-gradient(135deg,#ff4d8d,#b45cff 55%,#6d6bff);--ok:#3ddc84;--wa:#ffc94d;--er:#ff5c6c;--mo:"IBM Plex Mono",ui-monospace,monospace;max-width:440px;margin:8px auto;background:var(--bg);color:var(--tx);border:1px solid #ffffff1f;border-radius:22px;overflow:hidden;font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:1.6;letter-spacing:-.01em;word-break:keep-all}
+.jo{--bg:#0b0b10;--s1:#14141b;--s2:#1d1d27;--s3:#2a2a37;--ln:#ffffff14;--tx:#f3f2f8;--mu:#a19db2;--dm:#6e6a7f;--pk:#ff4d8d;--gd:linear-gradient(135deg,#ff4d8d,#b45cff 55%,#6d6bff);--ok:#3ddc84;--wa:#ffc94d;--er:#ff5c6c;--mo:"IBM Plex Mono",ui-monospace,monospace;max-width:440px;margin:8px auto;background:var(--bg);color:var(--tx);border:1px solid #ffffff1f;border-radius:22px;overflow:hidden;font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:1.6;letter-spacing:-.01em;word-break:keep-all}
 .jo *{box-sizing:border-box}
 .jo-hd{position:relative;padding:22px 18px 16px;background:radial-gradient(80% 120% at 50% -20%,#3b1a3a,#0b0b1000 70%)}
 .jo-fl{position:absolute;top:0;left:18%;right:18%;height:3px;border-radius:0 0 3px 3px;background:#e9f3ff;box-shadow:0 0 18px 4px #cfe3ff55;animation:jofl 4s infinite}
@@ -14,7 +14,8 @@
 .jo-bar>i:nth-child(2){background:#febc2e}.jo-bar>i:nth-child(3){background:#28c840;margin-right:3px}
 .jo-bar b{margin-left:auto;font-weight:500;color:var(--ok)}
 .jo-id{display:flex;align-items:center;gap:10px;padding:12px 12px 10px}
-.jo-av{flex:none;width:38px;height:48px;border-radius:9px;background:#fff var(--jh) 50% 28%/135% auto;box-shadow:0 0 0 1px #ffffff26}
+.jo-av{position:relative;overflow:hidden;flex:none;width:38px;height:48px;border-radius:9px;background:#fff;box-shadow:0 0 0 1px #ffffff26}
+.jo-av img{position:absolute;width:135%;max-width:none;left:-17.5%;top:-2%}
 .jo-id p{margin:0;font-size:14px;font-weight:700}
 .jo-id small{display:block;font-family:var(--mo);font-size:10.5px;font-weight:400;color:var(--ok)}
 .jo-kp{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:6px;padding:0 12px 12px}
@@ -39,12 +40,14 @@
 .jo-sy{justify-self:center;font-family:var(--mo);font-size:10.5px;color:var(--wa);background:#ffc94d14;border:1px solid #ffc94d3d;border-radius:99px;padding:3px 10px;text-align:center}
 .jo-na{font-size:12.5px;color:var(--mu);line-height:1.6;padding:0 2px}
 .jo-th{display:flex;align-items:center;gap:7px;justify-self:start;padding:6px 11px 6px 6px;border-radius:99px;border:1.5px dashed #ffffff2e;color:#cfcbdf;font-size:12.5px}
-.jo-th i{flex:none;width:20px;height:20px;border-radius:50%;background:#fff var(--jh) 50% 40%/250% auto}
+.jo-th i{position:relative;overflow:hidden;flex:none;width:20px;height:20px;border-radius:50%;background:#fff}
+.jo-th i img{position:absolute;width:250%;max-width:none;left:-75%;top:-60%}
 .jo-mn{justify-self:end;font-family:var(--mo);font-size:10.5px;color:var(--dm);padding:2px 8px;border-radius:6px;background:var(--s2)}
 .jo-out{justify-self:end;display:grid;justify-items:end;gap:3px;max-width:84%}
 .jo-out div{display:flex;align-items:flex-end;gap:7px}
 .jo-out p{margin:0;padding:9px 13px;border-radius:18px 18px 4px 18px;background:var(--gd);font-size:13.5px;line-height:1.5}
-.jo-out i{flex:none;width:24px;height:24px;border-radius:50%;background:var(--im) 61% 10%/225% auto}
+.jo-out i{position:relative;overflow:hidden;flex:none;width:24px;height:24px;border-radius:50%;background:#272734}
+.jo-out i img{position:absolute;width:225%;max-width:none;left:-76%;top:-15%}
 .jo-out small{font-family:var(--mo);font-size:10px;color:var(--dm);margin-right:31px}
 .jo-ft{display:flex;align-items:center;gap:8px;margin:0 12px 12px;padding:7px 7px 7px 12px;border-radius:99px;background:var(--s1);border:1px solid var(--ln);font-size:12px;color:var(--dm)}
 .jo-ft b{margin-left:auto;font-weight:500;font-size:11px;padding:3px 9px;border-radius:99px;background:var(--s2);color:var(--wa);white-space:nowrap}
@@ -57,7 +60,7 @@
 </div>
 <div class="jo-cs">
 <div class="jo-bar"><i></i><i></i><i></i>admin.doogeun · 상담원 콘솔<b>● 야간 근무 중</b></div>
-<div class="jo-id"><div class="jo-av"></div><p>한지후<small>// 강시혁 담당 · 상담원 07 · 3번 자리</small></p></div>
+<div class="jo-id"><div class="jo-av"><img src="https://raw.githubusercontent.com/akari383/-/c37655c29443876b0f9aa872d43aedbbfa8cd6e1/images/jihoo.jpg" alt="한지후"></div><p>한지후<small>// 강시혁 담당 · 상담원 07 · 3번 자리</small></p></div>
 <div class="jo-kp">
 <div><span>오늘 처리</span><b>286건 · ₩3,432</b></div>
 <div><span>이탈 경고</span><b class="e">7 / 10</b></div>
@@ -74,12 +77,12 @@
 <div class="jo-bd">
 <div class="jo-sy">#0427 · {{user}} 님이 접속했습니다</div>
 <div class="jo-na">지후는 집어 들던 나무젓가락을 도로 내려놓았다. 자세를 고쳐 앉은 건 본인도 몰랐다.</div>
-<div class="jo-th"><i></i>(…또 이 시간이네.)</div>
+<div class="jo-th"><i><img src="https://raw.githubusercontent.com/akari383/-/c37655c29443876b0f9aa872d43aedbbfa8cd6e1/images/jihoo.jpg" alt=""></i>(…또 이 시간이네.)</div>
 <div class="jo-mn">📖 매뉴얼 p.1 · 야간 재방문 고객 인사</div>
-<div class="jo-out"><div><p>…또 너야? 내 시간은 1분에 3억이야. 용건만 말해.</p><i></i></div><small>강시혁으로 전송 · 02:14 ✓</small></div>
-<div class="jo-th"><i></i>(와. 이걸 내 손으로 쳤네.)</div>
+<div class="jo-out"><div><p>…또 너야? 내 시간은 1분에 3억이야. 용건만 말해.</p><i><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""></i></div><small>강시혁으로 전송 · 02:14 ✓</small></div>
+<div class="jo-th"><i><img src="https://raw.githubusercontent.com/akari383/-/c37655c29443876b0f9aa872d43aedbbfa8cd6e1/images/jihoo.jpg" alt=""></i>(와. 이걸 내 손으로 쳤네.)</div>
 <div class="jo-na">엔터를 누르고 3초. 오 실장이 자고 있는 걸 한 번 더 확인한 지후가 한 줄을 더 쳤다.</div>
-<div class="jo-out"><div><p>…앉아. 1분 정도는 내줄 수 있으니까.</p><i></i></div><small>강시혁으로 전송 · 02:14 ✓</small></div>
+<div class="jo-out"><div><p>…앉아. 1분 정도는 내줄 수 있으니까.</p><i><img src="https://raw.githubusercontent.com/akari383/-/4d60940d723b76e2343d62e917b6824a8e142015/images/sihyuk.jpg" alt=""></i></div><small>강시혁으로 전송 · 02:14 ✓</small></div>
 </div>
 <div class="jo-ft">#0427 답장 기다리는 중…<b>🍜 라면 불는 중</b></div>
 </div>
