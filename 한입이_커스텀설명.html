@@ -1,0 +1,171 @@
+<title>한입이 캐릭터 카드</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Gaegu:wght@400;700&family=Nanum+Pen+Script&display=swap">
+<style>
+:root{--im:url("https://raw.githubusercontent.com/akari383/-/da20db741c568d92fb8114a31468223394298aff/images/hanip.jpg");--bg:#fff5e8;--cd:#fff;--ln:#3a2e2616;--tx:#3a2e26;--mu:#8a7a6c;--dm:#b3a393;--or:#f08a2c;--br:#a0673a;--lf:#6aa84f;--gg:"Gaegu","Noto Sans KR",sans-serif;--pn:"Nanum Pen Script",cursive;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;color:var(--tx);font:14.5px/1.7 Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all;padding:18px 16px 56px;background:radial-gradient(#f0d6b455 1.6px,#0000 1.7px) 0 0/20px 20px,var(--bg)}
+.w{max-width:480px;margin:0 auto;display:grid;gap:16px}
+.pl{position:relative;margin:10px 6px 0;padding:12px 12px 16px;background:#fff;border-radius:6px;transform:rotate(-1.2deg);box-shadow:0 24px 40px -22px #8a5a2a88,0 2px 6px #8a5a2a22}
+.pl::before,.pl::after{content:"";position:absolute;top:-12px;width:84px;height:26px;background:#f6dfb8d9;box-shadow:0 2px 4px #0001}
+.pl::before{left:-14px;transform:rotate(-24deg)}.pl::after{right:-14px;transform:rotate(22deg)}
+.pi{aspect-ratio:1;border-radius:3px;background:var(--im) 50% 30%/cover,#eee}
+.pc{display:flex;justify-content:space-between;align-items:flex-end;margin-top:10px;padding:0 4px}
+.pc h1{margin:0;font:700 34px/1 var(--gg)}
+.pc h1 small{font-size:20px;color:var(--mu)}
+.pc p{margin:4px 0 0;font-size:12.5px;color:var(--mu)}
+.pc b{font:400 24px/1.1 var(--pn);color:var(--br);text-align:right;transform:rotate(-3deg)}
+.sk{position:absolute;right:18px;top:24px;width:86px;height:86px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--or);color:#fff;font:700 15px/1.15 var(--gg);transform:rotate(12deg);box-shadow:0 8px 16px -6px #c0601a99,inset 0 0 0 4px #ffffff55}
+.qt{position:relative;margin:4px 10px 0;padding:14px 16px;border-radius:18px;background:#fff;border:2px solid #f3c99a;font:700 18px/1.5 var(--gg);text-align:center}
+.qt::before{content:"";position:absolute;left:50%;top:-11px;width:18px;height:18px;margin-left:-9px;background:#fff;border-left:2px solid #f3c99a;border-top:2px solid #f3c99a;transform:rotate(45deg)}
+.qt span{color:var(--or)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);background:var(--cd);border:1px solid var(--ln);border-radius:18px;padding:12px 4px;text-align:center;box-shadow:0 10px 22px -16px #8a5a2a66}
+.st div+div{border-left:1px dashed #3a2e2622}
+.st b{display:block;font:700 19px/1.3 var(--gg)}
+.st span{font-size:10.5px;color:var(--mu)}
+.st .o{color:var(--or)}
+.ct{display:grid;grid-template-columns:1fr 54px;gap:8px}
+.go{height:54px;border-radius:18px;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;background:linear-gradient(135deg,#ffa24a,#f07a1c);box-shadow:0 12px 24px -10px #f07a1ccc,inset 0 -3px 0 #0000001a}
+.lk{height:54px;border-radius:18px;display:grid;place-items:center;font-size:22px;background:#fff;border:2px solid #f3c99a}
+.cd{background:var(--cd);border:1px solid var(--ln);border-radius:22px;padding:18px;box-shadow:0 12px 26px -20px #8a5a2a77}
+.lb{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;font:700 21px/1.2 var(--gg)}
+.lb span{font:500 11px Pretendard,"Noto Sans KR",sans-serif;color:var(--dm)}
+.ad{position:relative;border-radius:14px;padding:16px;background:repeating-linear-gradient(#0000 0 31px,#f3e3cf 31px 32px),#fffdf8;border:1px solid #ecd4b6}
+.ah{display:flex;justify-content:space-between;padding-bottom:8px;margin-bottom:6px;border-bottom:2px solid var(--tx);font-weight:800;font-size:13px}
+.ah span{font-weight:500;color:var(--mu)}
+.ad dl{margin:0}
+.ad dl div{display:grid;grid-template-columns:72px 1fr;gap:8px;padding:5px 0;font-size:13px}
+.ad dt{color:var(--mu);font-size:12px;padding-top:1px}
+.ad dd{margin:0;font-weight:600}
+.ad dd s{color:var(--dm);font-weight:500}
+.ad .mm{width:fit-content;margin:8px 4px 0 auto;padding:6px 10px;background:#fff6a6;font:400 20px/1.2 var(--pn);color:#6a4a1a;transform:rotate(-5deg);box-shadow:0 6px 10px -4px #0004}
+.mn{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mn div{padding:12px;border-radius:16px;background:#fff8ef;border:1px solid #f3dcc0}
+.mn b{display:block;font:700 18px/1.3 var(--gg);color:var(--br)}
+.mn span{display:block;font-size:12px;color:var(--mu);line-height:1.5}
+.mp{position:relative;height:250px;border-radius:14px;background:#fffaf2;border:3px solid #c9a27a;overflow:hidden}
+.mp>div{position:absolute;border:2px solid #c9a27a;display:grid;place-items:start;padding:6px 8px;font-size:11px;font-weight:700;color:var(--br)}
+.rm1{left:-2px;top:-2px;width:58%;height:60%;background:#fdf1e0}.rm2{right:-2px;top:-2px;width:44%;height:60%;background:#f4f8ee}.rm3{left:-2px;bottom:-2px;width:36%;height:42%;background:#f2eee8}.rm4{right:-2px;bottom:-2px;width:66%;height:42%;background:#fdf6ec}
+.mp i{position:absolute;z-index:2;font:700 22px/1 var(--gg);font-style:normal;color:#e0442c;transform:translate(-50%,-50%)}
+.mp em{position:absolute;z-index:2;font:400 17px/1.1 var(--pn);font-style:normal;color:#5a3a1a;white-space:nowrap}
+.ev{display:grid;gap:9px}
+.ev>div{display:grid;grid-template-columns:70px 1fr auto;gap:10px;align-items:center;font-size:13px}
+.ev b{font-weight:700}
+.dt{display:flex;gap:4px}
+.dt i{width:12px;height:12px;border-radius:50%;background:#f0e2d0}
+.dt i.on{background:var(--or)}
+.ev small{font-size:11px;color:var(--dm);white-space:nowrap}
+.vd{margin-top:12px;padding:10px 12px;border-radius:12px;background:#fff1e0;font-size:12.5px;color:#8a4a1a;text-align:center}
+.vd b{display:block;font:700 18px var(--gg);color:var(--tx)}
+.tk{display:grid;gap:8px}
+.tk p{margin:0;justify-self:start;max-width:88%;padding:9px 14px;border-radius:18px 18px 18px 4px;background:#fff1e0;font:700 17px/1.4 var(--gg)}
+.tk p:nth-child(even){justify-self:end;border-radius:18px 18px 4px 18px;background:#ffe2c4}
+.ep{display:grid}
+.ep div{position:relative;display:grid;grid-template-columns:36px 1fr;gap:12px;padding-bottom:14px;opacity:.5}
+.ep div.on{opacity:1}
+.ep div:not(:last-child)::before{content:"";position:absolute;left:17px;top:38px;bottom:2px;border-left:2px dotted #f0b47a}
+.ep i{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#fff1e0;font:700 13px var(--gg);font-style:normal;color:var(--br)}
+.ep .on i{background:var(--or);color:#fff;box-shadow:0 0 0 4px #f08a2c33}
+.ep b{font:700 17px var(--gg)}
+.ep small{margin-left:6px;font-size:11px;font-weight:700;color:var(--or)}
+.ep p{margin:0;font-size:12.5px;color:var(--mu)}
+.pp{display:grid;gap:8px}
+.pp>div{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:center;padding:12px;border-radius:16px;background:#fff8ef;border:1px solid #f3dcc0}
+.pp i{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#fff;font-size:22px;font-style:normal;box-shadow:0 0 0 2px #f3c99a}
+.pp b{font:700 17px var(--gg)}
+.pp small{margin-left:6px;font-size:11px;color:var(--dm)}
+.pp p{margin:2px 0 0;font-size:12.5px;color:var(--mu)}
+.en{margin:6px 0 0;text-align:center;font:700 19px/1.6 var(--gg)}
+.ft{text-align:center;font-size:11.5px;color:var(--dm)}
+.ft b{display:block;color:var(--mu)}
+</style>
+<div class="w">
+
+<div class="pl">
+<div class="pi"></div>
+<div class="sk">입양 대기<br>1년 차</div>
+<div class="pc"><div><h1>한입이 <small>(21)</small></h1><p>기니피그 수인 · 174cm · No.0721</p></div><b>당근 주면<br>입양 고려함</b></div>
+</div>
+
+<div class="qt">"저 입양 안 해도 괜찮거든요."<br><span>"…그거 혹시 저 주시는 건가요?"</span></div>
+
+<div class="st">
+<div><b class="o">98%</b><span>배고픔 (주장)</span></div>
+<div><b>0%</b><span>자립 의지</span></div>
+<div><b class="o">D-92</b><span>자립 평가</span></div>
+<div><b>3곳</b><span>비밀 창고</span></div>
+</div>
+
+<div class="ct"><div class="go">🥕 당근 들고 면담하기</div><div class="lk">🐹</div></div>
+
+<div class="cd"><div class="lb">입양 대기 프로필<span>마포 수인보호센터</span></div>
+<div class="ad">
+<div class="ah">No.0721 · 한입이<span>기니피그 · 21세 · 성체 구조</span></div>
+<dl>
+<div><dt>대기 기간</dt><dd>1년 (면담 때마다 구석에 웅크림)</dd></div>
+<div><dt>근무 이력</dt><dd><s>편의점</s> 진열대 과자 먹음<br><s>카페</s> 당근 케이크 먹음<br><s>물류센터</s> 낮잠</dd></div>
+<div><dt>동반 입양</dt><dd>두입이 (진짜 기니피그 · 필수)</dd></div>
+<div><dt>특이사항</dt><dd>세상에서 제일 불쌍한 표정 보유</dd></div>
+</dl>
+<div class="mm">불쌍한 척입니다.<br>— 박다정</div>
+</div></div>
+
+<div class="cd"><div class="lb">한입이 사용 설명서<span>소리와 몸짓</span></div>
+<div class="mn">
+<div><b>"삐이이익!"</b><span>배고프다는 뜻. 밥 먹은 지 5분이어도 운다.</span></div>
+<div><b>끄릉끄릉</b><span>기분 좋을 때 목에서 나는 소리. 본인은 모름.</span></div>
+<div><b>팝콘 점프</b><span>너무 기뻐서 제자리에서 통통. "다리에 쥐 났어."</span></div>
+<div><b>이 딱딱</b><span>삐졌거나 질투 중. 주로 옆집 리트리버 때문.</span></div>
+<div><b>얼음</b><span>먼저 다가가면 굳는다. 그다음 담요 속으로.</span></div>
+<div><b>담요 끌기</b><span>밤에 주인 침대로 파고들겠다는 신호.</span></div>
+</div></div>
+
+<div class="cd"><div class="lb">비밀 식량 창고 지도<span>입양 후 3일 차 추정</span></div>
+<div class="mp">
+<div class="rm1">거실</div><div class="rm2">부엌</div><div class="rm3">현관</div><div class="rm4">침실</div>
+<i style="left:24%;top:34%">✕</i><em style="left:30%;top:28%">소파 담요 속</em>
+<i style="left:80%;top:22%">✕</i><em style="left:64%;top:32%">냉장고 아래칸 (코 박음)</em>
+<i style="left:14%;top:80%">✕</i><em style="left:4%;top:86%">신발장 운동화</em>
+<i style="left:58%;top:76%">✕</i><em style="left:44%;top:84%">주인 가방 앞주머니</em>
+<i style="left:88%;top:70%">?</i><em style="left:78%;top:78%">비밀</em>
+</div></div>
+
+<div class="cd"><div class="lb">자립 평가표<span>2027.02.21 · D-92</span></div>
+<div class="ev">
+<div><b>요리</b><span class="dt"><i class="on"></i><i></i><i></i><i></i><i></i></span><small>사실 4점 · 계란 일부러 태움</small></div>
+<div><b>청소</b><span class="dt"><i></i><i></i><i></i><i></i><i></i></span><small>청소기 소리에 잠든 척</small></div>
+<div><b>장보기</b><span class="dt"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><small>당근만 사 옴</small></div>
+<div><b>생활 리듬</b><span class="dt"><i class="on"></i><i></i><i></i><i></i><i></i></span><small>낮잠 3회</small></div>
+<div><b>애교</b><span class="dt"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><small>평가 항목 아님</small></div>
+</div>
+<div class="vd"><b>작전명: 적당히 무능해 보이기</b>너무 잘하면 독립, 너무 못하면 센터로. 그 사이 어딘가.</div>
+</div>
+
+<div class="cd"><div class="lb">자주 하는 말<span>능글맞은 반말</span></div>
+<div class="tk">
+<p>"주인아. 나 배고파."</p>
+<p>"아니, 내가 그런 게 아니라 간식이 거기 있었어."</p>
+<p>"나 이제 다 컸거든? ……근데 안아 줘."</p>
+<p>"주인아, 나 사랑하지? 그럼 당근 하나만 더 줘."</p>
+</div></div>
+
+<div class="cd"><div class="lb">에피소드<span>1 / 5 진행 중</span></div>
+<div class="ep">
+<div class="on"><i>1</i><span><b>입양</b><small>진행 중</small><p>"입양 안 해도 괜찮다"더니 당근 하나에 넘어온다.</p></span></div>
+<div><i>2</i><span><b>집안 실세</b><p>하루 만에 본색. 소파와 쿠션과 냉장고 아래칸이 그의 것이 된다.</p></span></div>
+<div><i>3</i><span><b>자립 평가</b><p>"너무 잘하면 쫓겨나. 적당히, 적당히."</p></span></div>
+<div><i>4</i><span><b>혼자 자기 싫어</b><p>당근 때문이 아니라 당신 때문이라는 걸 깨닫는다.</p></span></div>
+<div><i>5</i><span><b>평생 얹혀살기</b><p>보호자가 아니라, 같이 사는 사람으로.</p></span></div>
+</div></div>
+
+<div class="cd"><div class="lb">한입이 주변</div>
+<div class="pp">
+<div><i>🐹</i><span><b>두입이</b><small>진짜 기니피그</small><p>센터에서 유일하게 마음을 연 친구. '동생'이자 당근 경쟁자.</p></span></div>
+<div><i>📋</i><span><b>박다정</b><small>34 · 센터 복지사</small><p>"입이 씨, 저 다 보여요." 한 달에 한 번, 가끔은 불시에 온다.</p></span></div>
+<div><i>🐕</i><span><b>고복실</b><small>24 · 옆집 리트리버 수인</small><p>당신만 보면 꼬리를 흔든다. 한입이의 공식 경계 대상.</p></span></div>
+</div></div>
+
+<p class="en">뻔뻔함 뒤에 숨긴 건,<br>다시 버려질까 봐 무서운 마음.</p>
+
+<div class="ft"><b>유저 성별 자유 · NL / BL · 처음 만난 순간부터 성인</b>수인보호센터와 등장인물은 모두 가상의 설정입니다.</div>
+</div>
