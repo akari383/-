@@ -1,22 +1,249 @@
-<title>한입이 캐릭터 카드</title>
+<title>한입이 입양 정보</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0..1,0&icon_names=arrow_back_ios_new,cake,call,check_circle,chevron_right,directions,do_not_disturb_on,favorite,height,hourglass_top,info,ios_share,location_on,pets,schedule,star,thumb_up,visibility&display=block">
 <style>
-:root{color-scheme:dark}
+:root{--im:url("https://raw.githubusercontent.com/akari383/-/da20db741c568d92fb8114a31468223394298aff/images/hanip.jpg");--tx:#191f28;--t2:#4e5968;--t3:#8b95a1;--t4:#b0b8c1;--ln:#f2f4f6;--bg:#fff;--or:#ff7a30;--ol:#fff3eb;color-scheme:light}
 *{box-sizing:border-box}
-body{margin:0;padding:14px 12px 40px;background:#1a1410;color:#b9ab9c;font:12px/1.7 Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all}
-.w{max-width:480px;margin:0 auto;display:grid;gap:10px}
-.s{width:100%;border-radius:14px;background:#2a2019 center/cover no-repeat;box-shadow:0 12px 26px -14px #000}
-.ft{margin-top:10px;text-align:center}
-.ft b{display:block;color:#e2d6c8;font-weight:700}
+body{margin:0;background:#e9ecef;color:var(--tx);font:15px/1.6 Pretendard,"Noto Sans KR",sans-serif;letter-spacing:-.02em;word-break:keep-all;-webkit-font-smoothing:antialiased}
+.w{max-width:480px;margin:0 auto;background:var(--bg)}
+.i{font-family:"Material Symbols Rounded";font-weight:normal;font-style:normal;font-size:22px;line-height:1;display:inline-block;vertical-align:middle;font-variation-settings:"FILL" 0;-webkit-font-feature-settings:"liga";font-feature-settings:"liga"}
+.f{font-variation-settings:"FILL" 1}
+.hero{position:relative;aspect-ratio:1;background:var(--im) 50% 30%/cover,#ddd}
+.hero::before{content:"";position:absolute;inset:0 0 auto;height:120px;background:linear-gradient(#0000008c,#0000)}
+.sb{position:absolute;z-index:2;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:center;padding:10px 22px 0;color:#fff;font-weight:700;font-size:14px}
+.sb i{display:inline-flex;gap:5px;align-items:flex-end}
+.sb i b{width:3px;background:#fff;border-radius:1px}
+.bat{width:24px;height:11px;border:1.5px solid #fff;border-radius:3px;padding:1px;margin-left:6px}
+.bat::before{content:"";display:block;width:70%;height:100%;background:#fff;border-radius:1px}
+.ab{position:absolute;z-index:2;left:0;right:0;top:40px;display:flex;align-items:center;gap:16px;padding:8px 16px;color:#fff}
+.ab span:first-child{margin-right:auto}
+.tg{position:absolute;left:16px;bottom:16px;display:flex;gap:6px}
+.tg span{padding:5px 10px;border-radius:8px;background:#000000a6;color:#fff;font-size:12px;font-weight:600;backdrop-filter:blur(6px)}
+.tg span:first-child{background:var(--or)}
+.pg{position:absolute;right:16px;bottom:16px;padding:4px 10px;border-radius:99px;background:#00000080;color:#fff;font-size:12px;font-weight:600}
+.dt{position:absolute;left:0;right:0;bottom:-18px;display:flex;justify-content:center;gap:5px}
+.dt b{width:6px;height:6px;border-radius:50%;background:#d1d6db}.dt b:first-child{width:16px;border-radius:3px;background:var(--tx)}
+.sec{padding:24px 20px}
+.bar{height:10px;background:var(--ln)}
+.ti{padding-top:34px}
+.ti h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.03em}
+.ti h1 small{margin-left:6px;font-size:15px;font-weight:600;color:var(--t3)}
+.lo{display:flex;align-items:center;gap:2px;margin-top:4px;font-size:14px;color:var(--t2)}
+.lo .i{font-size:18px;color:var(--t3)}
+.me{display:flex;gap:12px;margin-top:10px;font-size:13px;color:var(--t3)}
+.me span{display:flex;align-items:center;gap:3px}
+.me .i{font-size:16px}
+.ch{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.ch span{padding:6px 11px;border-radius:99px;background:var(--ln);font-size:13px;font-weight:600;color:var(--t2)}
+.ch .o{background:var(--ol);color:var(--or)}
+.qi{display:grid;grid-template-columns:repeat(4,1fr);margin-top:20px;border:1px solid var(--ln);border-radius:16px;text-align:center}
+.qi div{padding:14px 4px}
+.qi div+div{border-left:1px solid var(--ln)}
+.qi .i{color:var(--or);font-size:24px}
+.qi small{display:block;margin-top:4px;font-size:11.5px;color:var(--t3)}
+.qi b{display:block;font-size:14.5px}
+.tip{display:flex;gap:10px;margin-top:16px;padding:14px;border-radius:14px;background:var(--ol);font-size:13.5px;color:#9a4a16}
+.tip .i{color:var(--or);font-size:20px}
+.tip b{color:var(--tx)}
+h2{margin:0 0 14px;display:flex;justify-content:space-between;align-items:center;font-size:19px;font-weight:800}
+h2 small{display:flex;align-items:center;font-size:13px;font-weight:500;color:var(--t3)}
+h2 small .i{font-size:18px}
+.st{display:flex;gap:12px;padding:16px;border-radius:16px;background:#f9fafb}
+.av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#ffe2cf;color:var(--or);font-weight:800}
+.st b{font-size:14px}.st b small{margin-left:4px;font-weight:500;color:var(--t3);font-size:12px}
+.st p{margin:4px 0 0;font-size:14px;color:var(--t2)}
+.hp{display:inline-flex;align-items:center;gap:4px;margin-top:10px;padding:5px 10px;border-radius:8px;border:1px solid #e5e8eb;font-size:12px;color:var(--t2)}
+.hp .i{font-size:16px}
+.ps{display:grid;gap:14px}
+.ps>div{display:grid;grid-template-columns:62px 1fr 56px;gap:10px;align-items:center;font-size:14px}
+.ps span{color:var(--t2)}
+.ps i{display:block;height:8px;border-radius:4px;background:var(--ln);overflow:hidden}
+.ps i b{display:block;height:100%;border-radius:4px;background:var(--or)}
+.ps em{font-style:normal;text-align:right;font-weight:700;font-size:13px}
+.ps .lw b{background:#c5ccd3}.ps .lw em{color:var(--t3)}
+.ht{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.ht span{font-size:13px;color:#3182f6;font-weight:500}
+.tl{position:relative;display:grid;gap:16px;padding-left:22px}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--ln)}
+.tl div{position:relative;font-size:14px}
+.tl div::before{content:"";position:absolute;left:-22px;top:5px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid #d1d6db}
+.tl div.o::before{border-color:var(--or)}
+.tl b{display:inline-block;width:52px;font-size:13px;color:var(--t3);font-weight:600}
+.tl small{display:block;padding-left:52px;font-size:12.5px;color:var(--t3)}
+.cr div{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid var(--ln);font-size:14px}
+.cr div div{display:block;padding:0;border:0}
+.cr>div:last-child{border:0}
+.cr b{display:block;font-size:15px}
+.cr small{color:var(--t3);font-size:12.5px}
+.cr span{padding:4px 9px;border-radius:6px;background:#fff0f0;color:#f04452;font-size:12px;font-weight:700;white-space:nowrap}
+.ck{display:grid;gap:12px;font-size:14.5px}
+.ck div{display:flex;align-items:center;gap:10px}
+.ck .i{font-size:22px;color:var(--or)}
+.ck .n .i{color:#c5ccd3}.ck .n{color:var(--t3)}
+.ck small{margin-left:auto;color:var(--t3);font-size:12px}
+.dd{display:flex;align-items:center;gap:18px;padding:18px;border-radius:18px;background:linear-gradient(135deg,#2b3340,#191f28);color:#fff}
+.rg{flex:none;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--or) 0 3%,#ffffff26 0 100%)}
+.rg div{width:68px;height:68px;border-radius:50%;background:#232a35;display:grid;place-items:center;text-align:center;font-size:11px;color:#ffffffb3;line-height:1.25}
+.rg b{display:block;font-size:20px;color:#fff}
+.dd h3{margin:0;font-size:17px}
+.dd p{margin:4px 0 0;font-size:13px;color:#ffffffb3}
+.dd em{font-style:normal;color:var(--or);font-weight:700}
+.rv-h{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.rv-h b{font-size:28px;font-weight:800}
+.rv-h .i{color:#ffb800;font-size:24px}
+.rv-h small{color:var(--t3);font-size:13px}
+.rv{padding:16px 0;border-top:1px solid var(--ln)}
+.rv-u{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700}
+.rv-u i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:12px;background:var(--ln);color:var(--t2)}
+.rv-u small{font-weight:500;color:var(--t3);font-size:12px}
+.rv-u span{margin-left:auto;color:#ffb800;font-size:12px;letter-spacing:1px}
+.rv p{margin:8px 0 0;font-size:14px;color:var(--t2)}
+.rp{display:flex;gap:8px;margin-top:10px;padding:12px;border-radius:12px;background:#f9fafb}
+.rp i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--im) 52% 38%/220% auto}
+.rp b{font-size:12.5px}.rp b small{margin-left:4px;padding:1px 6px;border-radius:4px;background:var(--ol);color:var(--or);font-size:10.5px}
+.rp p{margin:2px 0 0;font-size:13.5px;color:var(--tx)}
+.mp{position:relative;height:150px;border-radius:16px;overflow:hidden;background:linear-gradient(90deg,#0000 47%,#fff 47% 52%,#0000 52%),linear-gradient(0deg,#0000 58%,#fff 58% 63%,#0000 63%),linear-gradient(28deg,#0000 30%,#ffffffcc 30% 33%,#0000 33%),linear-gradient(90deg,#0000 72%,#cfe8d4 72% 94%,#0000 94%) 0 0/100% 42% no-repeat,linear-gradient(#cfe3f7,#cfe3f7) 0 100%/100% 20% no-repeat,#eef1ec}
+.mp .pin{position:absolute;left:50%;top:46%;transform:translate(-50%,-100%);color:var(--or);font-size:40px;filter:drop-shadow(0 3px 3px #0004)}
+.mp b{position:absolute;left:50%;top:50%;transform:translateX(-50%);padding:4px 10px;border-radius:8px;background:#fff;font-size:12px;box-shadow:0 2px 8px #0002;white-space:nowrap}
+.sh{margin-top:14px;font-size:14px}
+.sh div{display:flex;gap:12px;padding:5px 0}
+.sh span{width:44px;flex:none;color:var(--t3)}
+.bt{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.bt div{display:flex;justify-content:center;align-items:center;gap:6px;padding:12px;border-radius:12px;background:var(--ln);font-weight:700;font-size:14px}
+.bt .i{font-size:20px}
+.cp{display:flex;align-items:center;gap:14px;padding:14px;border:1px solid var(--ln);border-radius:16px}
+.cp .ph{flex:none;width:60px;height:60px;border-radius:14px;display:grid;place-items:center;background:#f6ead9;color:#a0673a}
+.cp .ph .i{font-size:30px}
+.cp b{display:block;font-size:15px}
+.cp small{font-size:13px;color:var(--t3)}
+.cp>span{margin-left:auto;padding:4px 9px;border-radius:6px;background:var(--ol);color:var(--or);font-size:12px;font-weight:700;white-space:nowrap}
+.nt{padding:20px;font-size:12px;color:var(--t3);background:#f9fafb;text-align:center;line-height:1.7}
+.nt b{display:block;color:var(--t2)}
+.cta{display:flex;gap:10px;padding:12px 16px 20px;background:#fff;border-top:1px solid var(--ln)}
+.cta .lk{display:grid;place-items:center;width:52px;flex:none;color:var(--or);font-size:11px;font-weight:700;line-height:1.1;text-align:center}
+.cta .lk .i{font-size:26px}
+.cta .go{flex:1;display:grid;place-items:center;height:54px;border-radius:14px;background:var(--or);color:#fff;font-weight:700;font-size:16.5px}
 </style>
 <div class="w">
-<div class="s" style="aspect-ratio:960/1174;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/01.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/1174;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/02.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/1174;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/03.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/1138;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/04.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/1032;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/05.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/1085;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/06.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/996;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/07.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/924;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/08.jpg&quot;)"></div>
-<div class="s" style="aspect-ratio:960/1243;background-image:url(&quot;https://raw.githubusercontent.com/akari383/-/bb6ef956ebc9e879f9cd794f9fa017a3712c379d/images/hanip_desc/09.jpg&quot;)"></div>
-<div class="ft"><b>유저 성별 자유 · NL / BL · 처음 만난 순간부터 성인</b>수인보호센터와 등장인물은 모두 가상의 설정입니다.</div>
+
+<div class="hero">
+<div class="sb"><span>9:41</span><i><b style="height:4px"></b><b style="height:6px"></b><b style="height:8px"></b><b style="height:10px"></b><span class="bat"></span></i></div>
+<div class="ab"><span class="i">arrow_back_ios_new</span><span class="i">ios_share</span><span class="i">favorite</span></div>
+<div class="tg"><span>입양 대기 365일</span><span>성체 구조</span></div>
+<div class="pg">1 / 4</div>
+<div class="dt"><b></b><b></b><b></b><b></b></div>
+</div>
+
+<div class="sec ti">
+<h1>한입이<small>기니피그 수인 · 남 · 21세</small></h1>
+<div class="lo"><span class="i">location_on</span>마포 수인보호센터 · 서울 마포구</div>
+<div class="me"><span><span class="i">visibility</span>조회 4.8만</span><span><span class="i">favorite</span>관심 1.2만</span><span><span class="i">schedule</span>면담 37회</span></div>
+<div class="ch"><span class="o">처음부터 성인</span><span>당근 반응 최상</span><span>낯가림 1일</span><span>두입이 동반 필수</span></div>
+<div class="qi">
+<div><span class="i">cake</span><small>나이</small><b>21세</b></div>
+<div><span class="i">height</span><small>키</small><b>174cm</b></div>
+<div><span class="i">hourglass_top</span><small>대기</small><b>1년</b></div>
+<div><span class="i">pets</span><small>동반</small><b>두입이</b></div>
+</div>
+<div class="tip"><span class="i f">info</span><span><b>면담 팁</b> · 당근에 강하게 반응해요. 면담 때 당근을 가져가면 "입양도 고려해 볼게요"를 들을 확률이 높아요.</span></div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>보호소 한마디</h2>
+<div class="st"><div class="av">박</div><div><b>박다정<small>사후관리 복지사</small></b>
+<p>순하고 정이 많은 친구예요. 사회 적응이 조금 어려워서 1년째 기다리고 있어요. 그리고… 불쌍한 척을 아주 잘합니다. 속지 마세요.</p>
+<div class="hp"><span class="i">thumb_up</span>도움돼요 312</div></div></div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>성격 리포트<small>센터 관찰 1년</small></h2>
+<div class="ps">
+<div><span>식욕</span><i><b style="width:100%"></b></i><em>측정불가</em></div>
+<div><span>애교</span><i><b style="width:98%"></b></i><em>98</em></div>
+<div><span>게으름</span><i><b style="width:92%"></b></i><em>92</em></div>
+<div><span>잔머리</span><i><b style="width:90%"></b></i><em>90</em></div>
+<div><span>외로움</span><i><b style="width:85%"></b></i><em>85</em></div>
+<div class="lw"><span>독립심</span><i><b style="width:3%"></b></i><em>3</em></div>
+</div>
+<div class="ht"><span>#먹보</span><span>#응석쟁이</span><span>#능글맞음</span><span>#간식협상가</span><span>#담요애호가</span><span>#아기취급금지</span></div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>하루 일과<small>센터 기록</small></h2>
+<div class="tl">
+<div><b>07:30</b>기상 거부<small>담요 속에서 안 나옴</small></div>
+<div class="o"><b>08:10</b>아침 먹고 "삐이이익!"<small>먹은 지 5분 만에 배고프다고 주장</small></div>
+<div><b>13:00</b>낮잠 (1차)</div>
+<div class="o"><b>15:00</b>간식 협상<small>"당근 하나 주면 방 정리할게요" (안 함)</small></div>
+<div><b>18:30</b>면담실 구석에서 불쌍한 표정 연습</div>
+<div><b>23:00</b>담요 끌고 직원실 침투 시도</div>
+</div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>사회 적응 이력</h2>
+<div class="cr">
+<div><div><b>편의점 아르바이트</b><small>2주 · 야간</small></div><span>진열대 과자 섭취</span></div>
+<div><div><b>카페 아르바이트</b><small>5일 · 주방 보조</small></div><span>당근 케이크 섭취</span></div>
+<div><div><b>물류센터</b><small>3일 · 상하차</small></div><span>근무 중 낮잠</span></div>
+</div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>입양 조건</h2>
+<div class="ck">
+<div><span class="i f">check_circle</span>두입이(진짜 기니피그) 동반 입양<small>필수</small></div>
+<div><span class="i f">check_circle</span>당근 상시 구비<small>권장</small></div>
+<div><span class="i f">check_circle</span>보호자 체취가 묻은 담요 1장 이상</div>
+<div><span class="i f">check_circle</span>입양 3개월 후 자립 평가 참여</div>
+<div class="n"><span class="i f">do_not_disturb_on</span>청소·정리 기대하지 않기</div>
+</div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<div class="dd"><div class="rg"><div><span>자립 의지</span><b>0%</b></div></div>
+<div><h3>자립 평가 D-92</h3><p>2027.02.21 · 너무 잘하면 독립, 너무 못하면 센터 복귀.<br>본인 목표: <em>적당히 무능해 보이기</em></p></div></div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>면담 후기<small>전체 보기<span class="i">chevron_right</span></small></h2>
+<div class="rv-h"><span class="i f">star</span><b>4.9</b><small>후기 128개</small></div>
+<div class="rv"><div class="rv-u"><i>방</i>방문자<small>· 3일 전</small><span>★★★★★</span></div>
+<p>입양 안 해도 괜찮다더니 당근 꺼내자마자 5초 만에 "입양도 고려해 볼게요" 하셨어요.</p></div>
+<div class="rv"><div class="rv-u"><i>봉</i>봉사자 김○○<small>· 2주 전</small><span>★★★★☆</span></div>
+<p>밥 먹고 5분 뒤 "삐이이익!" 실화입니다. 귀는 진짜 말랑해요(만지면 화냄).</p></div>
+<div class="rv"><div class="rv-u"><i>복</i>고복실<small>· 1달 전</small><span>★★★★★</span></div>
+<p>귀여워요!! 꼬리 흔들면서 인사해도 되나요?</p>
+<div class="rp"><i></i><div><b>한입이<small>당사자</small></b><p>안 돼요.</p></div></div></div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>보호소 정보</h2>
+<div class="mp"><span class="i f pin">location_on</span><b>마포 수인보호센터</b></div>
+<div class="sh">
+<div><span>주소</span>서울 마포구 망원동 (가상의 주소)</div>
+<div><span>운영</span>매일 10:00 – 18:00 · 면담 예약제</div>
+<div><span>담당</span>박다정 복지사 · 월 1회 가정 방문</div>
+</div>
+<div class="bt"><div><span class="i">call</span>전화 문의</div><div><span class="i">directions</span>길찾기</div></div>
+</div>
+<div class="bar"></div>
+
+<div class="sec">
+<h2>함께 입양해야 해요</h2>
+<div class="cp"><div class="ph"><span class="i f">pets</span></div><div><b>두입이</b><small>기니피그 (일반 동물)</small></div><span>동반 필수</span></div>
+</div>
+
+<div class="nt"><b>유저 성별 자유 · NL / BL · 처음 만난 순간부터 성인</b>마포 수인보호센터와 등장인물은 모두 가상의 설정입니다.</div>
+
+<div class="cta"><div class="lk"><span class="i f">favorite</span>1.2만</div><div class="go">🥕 면담 신청하기</div></div>
 </div>
